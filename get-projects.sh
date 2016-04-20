@@ -16,22 +16,6 @@ if [ -z ${GIT_AUTHORITY_PATH+x} ]; then
   exit
 fi
 
-if [ -z ${REMOTE_NAME+x} ]; then
-  echo "(REMOTE_NAME is not set. Using \"origin\" by default.)"
-  remote_name="origin"
-else
-  remote_name=$REMOTE_NAME
-fi
-
-source ./projects/projects.sh
-source ./run-cmd.sh
-
-working_copies=(
-  "${projects[@]}"
-)
-
-remote_authority_path=$GIT_AUTHORITY_PATH
-
 function clone-repo {
   name=$1
 
@@ -69,6 +53,21 @@ function pull-repo {
 
   popd > /dev/null
 }
+
+source ./projects/projects.sh
+source ./run-cmd.sh
+
+working_copies=(
+  "${projects[@]}"
+)
+
+remote_name=$1
+if [ -z "$remote_name" ]; then
+  echo "(The remote was not specified as the argument to this script. Using \"origin\" by default.)"
+  remote_name="origin"
+fi
+
+remote_authority_path=$GIT_AUTHORITY_PATH
 
 echo
 echo "Getting code from $remote_authority_path"
