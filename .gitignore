@@ -1,2 +1,4 @@
 .DS_Store
 *.scratch.*
+projects/ruby-private-projects.sh
+projects/other-private-projects.sh
