@@ -12,10 +12,6 @@ fi
 source ./projects/projects.sh
 source ./run-cmd.sh
 
-working_copies=(
-  "${projects[@]}"
-)
-
 function add-remote {
   name=$1
 
@@ -41,6 +37,10 @@ echo
 echo "Adding remote (Name: $remote_name, URI: $remote_url)"
 echo "= = ="
 echo
+
+working_copies=(
+  "${projects[@]}"
+)
 
 pushd $PROJECTS_HOME > /dev/null
 
