@@ -41,12 +41,12 @@ gem_repo_authority_path=$GEM_AUTHORITY_PATH
 public_gem_repo_uri="$scheme//$gem_repo_authority_path"
 
 gemfury_token=""
-if [ -z ${GEMFURY_TOKEN+x} ]; then
+if [ ! -z ${GEMFURY_TOKEN+x} ]; then
   gemfury_token=$GEMFURY_TOKEN
 fi
 
 private_source=""
-if [ $gemfury_token = "" ]; then
+if [ ! $gemfury_token = "" ]; then
   private_gem_repo_uri="$scheme//$gemfury_token@$gem_repo_authority_path"
   private_source="--source $private_gem_repo_uri"
 fi
