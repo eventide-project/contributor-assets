@@ -28,6 +28,8 @@ src_dir='contributor-assets'
 pushd $PROJECTS_HOME > /dev/null
 
 for name in "${working_copies[@]}"; do
+  echo $name
+  echo "- - -"
   dir=$name
   for file_name in "${files[@]}"; do
     update-file $file_name $src_dir $dir
