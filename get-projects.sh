@@ -92,5 +92,4 @@ done
 popd > /dev/null
 
 echo "= = ="
-echo "(done getting code)"
 
