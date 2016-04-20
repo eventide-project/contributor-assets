@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+clear
+
 set -e
 
 if [ -z ${DRY_RUN+x} ]; then
@@ -17,22 +19,24 @@ if [ -z ${GEMFURY_TOKEN+x} ]; then
 fi
 
 function publish-gems {
-  cmd="rm *.gem"
-  run-cmd "$cmd"
-  echo
+  if test -n "$(find . -maxdepth 1 -name '*.gem' -print -quit)"; then
+    for gemfile in *.gem; do
+      echo "Removing $gemfile"
+      cmd="rm $gemfile"
+      run-cmd "$cmd"
+    done
+  fi
 
   for gemspec in *.gemspec; do
     echo "Building $gemspec"
     cmd="gem build $gemspec"
     run-cmd "$cmd"
-    echo
   done
 
   for gemfile in *.gem; do
-    echo "- publishing $gemfile"
+    echo "Publishing $gemfile"
     cmd="curl -F package=@$gemfile https://$GEMFURY_TOKEN@push.fury.io/eventide/"
     run-cmd "$cmd"
-    echo
   done
 }
 
@@ -43,6 +47,14 @@ echo
 echo "Publishing gems"
 echo "= = ="
 echo
+
+# working_copies=(
+#   "${projects[@]}"
+# )
+
+working_copies=(
+  "attribute"
+)
 
 pushd $PROJECTS_HOME > /dev/null
 
