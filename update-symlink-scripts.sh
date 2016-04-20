@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
-${DRY_RUN:=true}
-
 clear
 
 set -e
+
+if [ -z ${DRY_RUN+x} ]; then
+  DRY_RUN=true
+fi
 
 echo
 echo "Updating Symlink Scripts for Ruby Projects"

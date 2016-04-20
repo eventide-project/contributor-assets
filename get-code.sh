@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-${DRY_RUN:=true}
-
 set -e
+
+if [ -z ${DRY_RUN+x} ]; then
+  DRY_RUN=true
+fi
 
 if [ -z ${PROJECTS_HOME+x} ]; then
   echo "PROJECTS_HOME is not set"
