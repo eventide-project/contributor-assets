@@ -21,17 +21,12 @@ function add-remote {
 
   remote_repository_url="$remote_url/$name.git"
 
-  dir=$name
-  pushd $dir > /dev/null
-
   if git remote | grep $remote_name > /dev/null; then
     echo "Working copy $name already has a remote named $remote_name. Skipping."
   else
     cmd="git remote add $remote_name $remote_repository_url"
     run-cmd "$cmd"
   fi
-
-  popd > /dev/null
 }
 
 remote_name=$1
@@ -52,12 +47,19 @@ pushd $PROJECTS_HOME > /dev/null
 for name in "${working_copies[@]}"; do
   echo $name
   echo "- - -"
-  if [ ! -d "$name/.git" ]; then
-    echo "$name is not a git working copy. Skipping."
+
+  dir=$name
+  pushd $dir > /dev/null
+
+  if [ ! -d ".git" ]; then
+    echo "$dir is not a git working copy. Skipping."
     echo
   else
     add-remote $name
   fi
+
+  popd > /dev/null
+
   echo
 done
 
