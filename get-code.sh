@@ -24,6 +24,7 @@ else
 fi
 
 source ./projects/projects.sh
+source ./run-cmd.sh
 
 working_copies=(
   "${projects[@]}"
@@ -40,13 +41,7 @@ function clone-repo {
   echo "- - -"
 
   clone_cmd="git clone $remote_repository_url"
-
-  if [ "$DRY_RUN" = "true" ]; then
-    echo "DRY RUN $clone_cmd"
-  else
-    echo $clone_cmd
-    ($clone_cmd)
-  fi
+  run-cmd "$clone_cmd"
 }
 
 function pull-repo {
@@ -58,27 +53,18 @@ function pull-repo {
   dir=$name
   pushd $dir > /dev/null
 
-  checkout_cmd="git checkout master"
-  pull_cmd="git pull --rebase $remote_name master"
-
   current_branch=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
-
   if [ master != $current_branch ]; then
-    echo $checkout_cmd
-    ($checkout_cmd)
+    checkout_cmd="git checkout master"
+    run-cmd "$checkout_cmd"
   fi
 
-  if [ "$DRY_RUN" = "true" ]; then
-    echo "DRY RUN $pull_cmd"
-  else
-    echo $pull_cmd
-    ($pull_cmd)
-  fi
+  pull_cmd="git pull --rebase $remote_name master"
+  run-cmd "$pull_cmd"
 
   if [ master != "$current_branch" ]; then
     co_crnt_cmd="git checkout $current_branch"
-    echo $co_crnt_cmd
-    ($co_crnt_cmd)
+    run-cmd "$co_crnt_cmd"
   fi
 
   popd > /dev/null
