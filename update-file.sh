@@ -23,7 +23,7 @@ function update-file {
     fi
 
     if [[ "$src" -nt "$dest" ]]; then
-      echo "Updating $src to $dest"
+      echo "Updating $dest from $src"
 
       pushd $dest_dir > /dev/null
       pwd
