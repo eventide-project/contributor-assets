@@ -13,13 +13,21 @@ echo "Updating the License for Public Projects"
 echo "= = ="
 echo
 
-source ./projects/other-public-projects.sh
-source ./projects/ruby-public-projects.sh
 source ./update-file.sh
 
+# source ./projects/other-public-projects.sh
+# source ./projects/ruby-public-projects.sh
+
+# working_copies=(
+#   "${other_public_projects[@]}"
+#   "${ruby_public_projects[@]}"
+# )
+
+source ./projects/projects.sh
+source ./run-cmd.sh
+
 working_copies=(
-  "${other_public_projects[@]}"
-  "${ruby_public_projects[@]}"
+  "${projects[@]}"
 )
 
 file_name="MIT-License.txt"
