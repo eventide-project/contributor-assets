@@ -16,10 +16,14 @@ source ./set-local-gem-path.sh
 echo
 echo 'Removing gem files'
 echo '- - -'
-for gem in *.gem; do
-  echo "- $gem"
-  rm $gem
-done
+if test -n "$(find . -maxdepth 1 -name '*.gem' -print -quit)"; then
+  for gem in *.gem; do
+    echo "- $gem"
+    rm $gem
+  done
+else
+  echo "(No gem files found)"
+fi
 
 echo
 echo 'Building gems'
