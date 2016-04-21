@@ -11,8 +11,17 @@ function update-file {
   if [ -z ${FORCE+x} ]; then
     FORCE=false
   fi
-
   echo "FORCE is $FORCE ($dest will only be updated if it exists)"
+
+  if [ -z ${PUSH+x} ]; then
+    PUSH=false
+  fi
+
+  if [ "$PUSH" = "true" ]; then
+    echo "PUSH is $PUSH. Updates will not be committed and pushed to origin master."
+  else
+    echo "PUSH is $PUSH. Updates will not be committed and pushed to origin master."
+  fi
 
   if [ $FORCE = true ] || [ -f "$dest" ]; then
 
@@ -28,34 +37,38 @@ function update-file {
       pushd $dest_dir > /dev/null
       pwd
 
-      current_branch=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
-      echo "Current Branch: $current_branch"
+      if [ "$PUSH" = "true" ]; then
+        current_branch=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
+        echo "Current Branch: $current_branch"
 
-      if [ master != "$current_branch" ]; then
-        checkout_master_cmd="git checkout master"
-        run-cmd "$checkout_master_cmd"
+        if [ master != "$current_branch" ]; then
+          checkout_master_cmd="git checkout master"
+          run-cmd "$checkout_master_cmd"
+        fi
       fi
 
       copy_cmd="cp -v ../$src ./"
       run-cmd "$copy_cmd"
 
-      git_add_cmd="git add $file_name"
-      run-cmd "$git_add_cmd"
+      if [ "$PUSH" = "true" ]; then
+        git_add_cmd="git add $file_name"
+        run-cmd "$git_add_cmd"
 
-      git_commit_cmd="git commit -m \"$file_name is updated with the latest version\""
-      if [ "$DRY_RUN" = "true" ]; then
-        echo "(DRY RUN) $git_commit_cmd"
-      else
-        echo "$git_commit_cmd"
-        git commit -m "$file_name is updated with the latest version"
-      fi
+        git_commit_cmd="git commit -m \"$file_name is updated with the latest version\""
+        if [ "$DRY_RUN" = "true" ]; then
+          echo "(DRY RUN) $git_commit_cmd"
+        else
+          echo "$git_commit_cmd"
+          git commit -m "$file_name is updated with the latest version"
+        fi
 
-      git_push_cmd="git push origin master"
-      run-cmd "$git_push_cmd"
+        git_push_cmd="git push origin master"
+        run-cmd "$git_push_cmd"
 
-      if [ master != "$current_branch" ]; then
-        co_crnt_cmd="git checkout $current_branch"
-        run-cmd "$co_crnt_cmd"
+        if [ master != "$current_branch" ]; then
+          co_crnt_cmd="git checkout $current_branch"
+          run-cmd "$co_crnt_cmd"
+        fi
       fi
 
       popd > /dev/null
