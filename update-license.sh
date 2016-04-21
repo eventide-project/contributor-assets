@@ -14,17 +14,9 @@ echo "= = ="
 echo
 
 source ./update-file.sh
-
-# source ./projects/other-public-projects.sh
-# source ./projects/ruby-public-projects.sh
-
-# working_copies=(
-#   "${other_public_projects[@]}"
-#   "${ruby_public_projects[@]}"
-# )
+source ./run-cmd.sh
 
 source ./projects/projects.sh
-source ./run-cmd.sh
 
 working_copies=(
   "${projects[@]}"
