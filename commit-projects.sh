@@ -25,7 +25,7 @@ function commit-project {
     echo "(DRY RUN) $cmd"
   else
     echo "$cmd"
-    git commit -m "$commit_message"
+    git commit -m "$commit_message" || true
   fi
 }
 
