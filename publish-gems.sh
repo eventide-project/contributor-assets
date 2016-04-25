@@ -40,7 +40,7 @@ function publish-gems {
   done
 }
 
-source ./projects/projects.sh
+source ./projects/ruby-public-projects.sh
 source ./run-cmd.sh
 
 echo
@@ -48,12 +48,8 @@ echo "Publishing gems"
 echo "= = ="
 echo
 
-# working_copies=(
-#   "${projects[@]}"
-# )
-
 working_copies=(
-  "attribute"
+  "${ruby_public_projects[@]}"
 )
 
 pushd $PROJECTS_HOME > /dev/null
