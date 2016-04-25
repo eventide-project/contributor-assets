@@ -1,35 +1,9 @@
 set -e
 
+source ./projects/ruby-public-gem-projects.sh
+source ./projects/ruby-public-other-projects.sh
+
 ruby_public_projects=(
-  "attribute"
-  "casing"
-  "clock"
-  "connection"
-  "connection-client"
-  "connection-server"
-  "controls"
-  "dependency"
-  "event-store-client"
-  "event-store-client-http"
-  "event-store-consumer"
-  "event-store-entity-projection"
-  "event-store-entity-store"
-  "event-store-messaging"
-  "eventide"
-  "http-commands"
-  "http-protocol"
-  "http-server"
-  "http-stack-test"
-  "identifier-uuid"
-  "initializer"
-  "process-host"
-  "runner"
-  "schema"
-  "serialize"
-  "set-attributes"
-  "settings"
-  "subst-attr"
-  "telemetry"
-  "telemetry-logger"
-  "virtual"
+  "${ruby_public_gem_projects[@]}"
+  "${ruby_public_other_projects[@]}"
 )
