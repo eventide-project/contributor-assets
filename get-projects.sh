@@ -3,7 +3,7 @@
 set -e
 
 if [ -z ${DRY_RUN+x} ]; then
-  DRY_RUN=true
+  DRY_RUN=false
 fi
 
 if [ -z ${PROJECTS_HOME+x} ]; then
