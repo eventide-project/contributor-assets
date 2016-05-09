@@ -15,6 +15,7 @@ ruby_public_gem_projects=(
   "event-store-client-http"
   "event-store-consumer"
   "event-store-entity-projection"
+  "event-store-entity-snapshot"
   "event-store-entity-store"
   "event-store-messaging"
   "eventide"
