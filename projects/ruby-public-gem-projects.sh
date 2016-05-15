@@ -18,7 +18,6 @@ ruby_public_gem_projects=(
   "event-store-entity-snapshot"
   "event-store-entity-store"
   "event-store-messaging"
-  "event-stream"
   "event-stream-postgres"
   "eventide"
   "http-commands"
