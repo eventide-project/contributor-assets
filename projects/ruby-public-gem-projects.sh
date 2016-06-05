@@ -1,6 +1,7 @@
 set -e
 
 ruby_public_gem_projects=(
+  "async-invocation"
   "attribute"
   "casing"
   "clock"
