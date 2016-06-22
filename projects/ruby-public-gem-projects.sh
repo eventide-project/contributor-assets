@@ -5,6 +5,7 @@ ruby_public_gem_projects=(
   "attribute"
   "casing"
   "clock"
+  "collection"
   "configure"
   "connection"
   "connection-client"
