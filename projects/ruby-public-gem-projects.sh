@@ -10,6 +10,7 @@ ruby_public_gem_projects=(
   "connection"
   "connection-client"
   "connection-server"
+  "consumer"
   "controls"
   "dependency"
   "entity-cache"
