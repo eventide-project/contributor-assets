@@ -30,6 +30,7 @@ ruby_public_gem_projects=(
   "http-server"
   "identifier-uuid"
   "initializer"
+  "log"
   "process-host"
   "runner"
   "schema"
