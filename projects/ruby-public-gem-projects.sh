@@ -12,6 +12,7 @@ ruby_public_gem_projects=(
   "connection-server"
   "consumer"
   "controls"
+  "cycle"
   "dependency"
   "entity-cache"
   "event-store-client"
