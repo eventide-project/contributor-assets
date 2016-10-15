@@ -40,6 +40,7 @@ ruby_public_gem_projects=(
   "subst-attr"
   "telemetry"
   "telemetry-logger"
+  "try"
   "validate"
   "virtual"
 )
