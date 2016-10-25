@@ -31,6 +31,7 @@ ruby_public_gem_projects=(
   "identifier-uuid"
   "initializer"
   "log"
+  "messaging"
   "process-host"
   "runner"
   "schema"
