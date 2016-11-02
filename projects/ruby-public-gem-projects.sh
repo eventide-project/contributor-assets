@@ -32,6 +32,7 @@ ruby_public_gem_projects=(
   "initializer"
   "log"
   "messaging"
+  "messaging-postgres"
   "process-host"
   "runner"
   "schema"
