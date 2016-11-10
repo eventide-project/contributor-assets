@@ -15,6 +15,7 @@ ruby_public_gem_projects=(
   "cycle"
   "dependency"
   "entity-cache"
+  "entity-projection"
   "event-store-client"
   "event-store-client-http"
   "event-store-consumer"
