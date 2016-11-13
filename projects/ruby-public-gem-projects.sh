@@ -17,6 +17,7 @@ ruby_public_gem_projects=(
   "entity-cache"
   "entity-projection"
   "entity-store"
+  "entity-store-postgres"
   "event-store-client"
   "event-store-client-http"
   "event-store-consumer"
