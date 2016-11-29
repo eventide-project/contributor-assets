@@ -30,6 +30,7 @@ ruby_public_gem_projects=(
   "event-source-postgres"
   "eventide"
   "eventide-postgres"
+  "eventide-event_store"
   "http-commands"
   "http-protocol"
   "http-server"

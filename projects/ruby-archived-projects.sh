@@ -5,6 +5,7 @@ ruby_archived_projects=(
   "error-telemetry-component"
   "event-stream-postgres"
   "eventide-rubygems-org-placeholder"
+  "eventide-event_store-rubygems-org-placeholder"
   "eventide-postgres-rubygems-org-placeholder"
   "metrics-stream-divergence"
   "ops-genie-client"
