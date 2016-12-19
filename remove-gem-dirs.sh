@@ -3,8 +3,6 @@
 echo "Removing Gem Installations"
 echo
 
-pushd $PROJECTS_HOME > /dev/null
-
 for dir in *; do
   pushd $dir > /dev/null
 
@@ -21,7 +19,5 @@ for dir in *; do
   popd > /dev/null
   echo
 done
-
-popd > /dev/null
 
 echo "= = ="
