@@ -29,12 +29,7 @@ function commit-project {
   fi
 }
 
-source ./projects/projects.sh
-source ./run-cmd.sh
-
-working_copies=(
-  "${projects[@]}"
-)
+source ./contributor-assets/run-cmd.sh
 
 commit_message=$1
 if [ -z "$commit_message" ]; then
@@ -52,18 +47,18 @@ echo
 
 pushd $PROJECTS_HOME > /dev/null
 
-for name in "${working_copies[@]}"; do
-  echo "$name"
+for dir in *; do
+  echo "$dir"
   echo "- - -"
 
-  dir=$name
+  dir=$dir
   pushd $dir > /dev/null
 
   if [ ! -d ".git" ]; then
     echo "$dir is not a git working copy. Skipping."
     echo
   else
-    commit-project $name
+    commit-project $dir
   fi
 
   popd > /dev/null
