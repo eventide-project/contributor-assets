@@ -28,6 +28,7 @@ ruby_public_gem_projects=(
   "event-store-messaging"
   "event-source"
   "event-source-postgres"
+  "event-source-event-store-http"
   "eventide-postgres"
   "eventide-event-store"
   "http-commands"
