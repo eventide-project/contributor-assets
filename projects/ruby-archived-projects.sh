@@ -6,6 +6,7 @@ ruby_archived_projects=(
   "connection-server"
   "error-data"
   "error-telemetry-component"
+  "event-store-client"
   "event-stream-postgres"
   "eventide"
   "eventide-rubygems-org-placeholder"
