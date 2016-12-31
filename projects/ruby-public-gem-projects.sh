@@ -7,7 +7,6 @@ ruby_public_gem_projects=(
   "clock"
   "collection"
   "configure"
-  "connection-server"
   "consumer"
   "controls"
   "copy"
