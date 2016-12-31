@@ -31,7 +31,6 @@ ruby_public_gem_projects=(
   "eventide-postgres"
   "eventide-event-store"
   "http-commands"
-  "http-protocol"
   "http-server"
   "identifier-uuid"
   "initializer"
