@@ -13,6 +13,7 @@ ruby_archived_projects=(
   "eventide-postgres-rubygems-org-placeholder"
   "http-commands"
   "http-protocol"
+  "http-server"
   "metrics-stream-divergence"
   "ops-genie-client"
   "raygun-client"
