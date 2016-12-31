@@ -14,6 +14,7 @@ ruby_archived_projects=(
   "http-commands"
   "http-protocol"
   "http-server"
+  "http-stack-test"
   "metrics-stream-divergence"
   "ops-genie-client"
   "raygun-client"
