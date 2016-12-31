@@ -2,6 +2,7 @@ set -e
 
 ruby_archived_projects=(
   "connection"
+  "connection-client"
   "error-data"
   "error-telemetry-component"
   "event-stream-postgres"
