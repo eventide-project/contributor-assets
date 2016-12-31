@@ -11,6 +11,7 @@ ruby_archived_projects=(
   "eventide-rubygems-org-placeholder"
   "eventide-event_store-rubygems-org-placeholder"
   "eventide-postgres-rubygems-org-placeholder"
+  "http-commands"
   "http-protocol"
   "metrics-stream-divergence"
   "ops-genie-client"
