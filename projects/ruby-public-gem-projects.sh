@@ -23,6 +23,7 @@ ruby_public_gem_projects=(
   "event-store-entity-projection"
   "event-store-entity-snapshot"
   "event-store-entity-store"
+  "event-store-http-connect"
   "event-store-messaging"
   "event-source"
   "event-source-postgres"
