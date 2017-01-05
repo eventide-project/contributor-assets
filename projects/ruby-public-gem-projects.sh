@@ -19,6 +19,7 @@ ruby_public_gem_projects=(
   "entity-store"
   "entity-store-postgres"
   "event-store-client-http"
+  "event-store-cluster-leader-status"
   "event-store-consumer"
   "event-store-entity-projection"
   "event-store-entity-snapshot"
