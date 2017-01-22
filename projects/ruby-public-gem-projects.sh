@@ -8,6 +8,8 @@ ruby_public_gem_projects=(
   "collection"
   "configure"
   "consumer"
+  "consumer-event-store"
+  "consumer-postgres"
   "controls"
   "copy"
   "cycle"
