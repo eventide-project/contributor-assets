@@ -21,6 +21,13 @@ libraries=(
   "entity-snapshot-postgres"
 )
 
+install_gems=false
+if [ -z ${INSTALL_GEMS+x} ]; then
+  if [ $INSTALL_GEMS = true ]; then
+    install_gems=true
+  fi
+fi
+
 pushd $PROJECTS_HOME > /dev/null
 
 for name in "${libraries[@]}"; do
@@ -30,6 +37,15 @@ for name in "${libraries[@]}"; do
   dir=$name
 
   pushd $dir > /dev/null
+
+  if [ $install_gems = true ]; then
+    echo "- installing gems"
+    rm -rf gems
+    rm -rf .bundle
+    rm Gemfile.lock
+
+    . ./install-gems.sh
+  fi
 
   ruby test/automated.rb
 
