@@ -39,6 +39,7 @@ ruby_public_gem_projects=(
   "log"
   "messaging"
   "messaging-postgres"
+  "retry"
   "runner"
   "schema"
   "serialize"
