@@ -32,6 +32,7 @@ ruby_archived_projects=(
   "ops-genie-client"
   "raygun-client"
   "runner"
+  "serialize"
   "stream-monitor"
   "telemetry-logger"
 )

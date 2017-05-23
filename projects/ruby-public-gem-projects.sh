@@ -32,7 +32,6 @@ ruby_public_gem_projects=(
   "messaging-postgres"
   "retry"
   "schema"
-  "serialize"
   "set-attributes"
   "settings"
   "subst-attr"
