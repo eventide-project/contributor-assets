@@ -14,7 +14,6 @@ ruby_public_gem_projects=(
   "copy"
   "cycle"
   "dependency"
-  "dns-resolve-host"
   "entity-cache"
   "entity-projection"
   "entity-snapshot-postgres"
