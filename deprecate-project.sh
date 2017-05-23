@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# NOTE: Copies projects to the archive org
+# Removing from the main org must be done manually
+
 set -e
 
 obsolete_projects=(
@@ -14,7 +17,7 @@ if [ -z ${PROJECTS_HOME+x} ]; then
   exit
 fi
 
-function archive-project {
+function deprecate-project {
   name=$1
 
   create_cmd="hub create evt-archive/$name"
@@ -48,7 +51,7 @@ for name in "${obsolete_projects[@]}"; do
     echo "$dir is not a git working copy. Skipping."
     echo
   else
-    archive-project $name
+    deprecate-project $name
   fi
 
   popd > /dev/null
@@ -59,4 +62,3 @@ done
 popd > /dev/null
 
 echo "= = ="
-
