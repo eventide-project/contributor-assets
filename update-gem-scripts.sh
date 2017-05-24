@@ -16,18 +16,16 @@ echo
 source ./projects/ruby-projects.sh
 source ./update-file.sh
 
+# working_copies=(
+#   "${ruby_projects[@]}"
+# )
 working_copies=(
-  "${ruby_projects[@]}"
-)
-
-old_files=(
-  "install-gems.sh"
-  "set-local-gem-path.sh"
+  "message-store-postgres"
 )
 
 files=(
-  "install_gems.sh"
-  "set_local_gem_path.sh"
+  "install-gems.sh"
+  "set-local-gem-path.sh"
 )
 
 src_dir='contributor-assets'
@@ -39,13 +37,6 @@ for name in "${working_copies[@]}"; do
   echo "- - -"
 
   dir=$name
-
-  for file_name in "${old_files[@]}"; do
-    if [ -f $dir/$file_name ]; then
-      echo "Deleting $dir/$file_name"
-      rm $dir/$file_name
-    fi
-  done
 
   for file_name in "${files[@]}"; do
     update-file $file_name $src_dir $dir

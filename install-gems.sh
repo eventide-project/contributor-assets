@@ -6,19 +6,12 @@ echo
 echo 'Installing local gems'
 echo '= = ='
 
-source ./set_local_gem_path.sh
+source ./set-local-gem-path.sh
 
 echo
 echo 'Removing gem files'
 echo '- - -'
-if test -n "$(find . -maxdepth 1 -name '*.gem' -print -quit)"; then
-  for gem in *.gem; do
-    echo "- $gem"
-    rm $gem
-  done
-else
-  echo "(No gem files found)"
-fi
+! rm -v *.gem
 
 echo
 echo 'Building gems'
