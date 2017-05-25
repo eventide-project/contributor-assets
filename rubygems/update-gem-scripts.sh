@@ -28,7 +28,7 @@ files=(
   "set-local-gem-path.sh"
 )
 
-src_dir='contributor-assets'
+src_dir='contributor-assets/rubygems'
 
 pushd $PROJECTS_HOME > /dev/null
 
