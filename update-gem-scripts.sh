@@ -38,10 +38,10 @@ for name in "${working_copies[@]}"; do
 
   dir=$name
 
-  for file_name in "${files[@]}"; do
-    update-file $file_name $src_dir $dir
-    echo
-  done
+  ! rm -v $dir/set-local-gem-path.sh
+
+  update-file install-gems.sh $src_dir $dir
+  echo
 done
 
 popd > /dev/null
