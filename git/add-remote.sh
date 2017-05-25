@@ -10,7 +10,7 @@ if [ -z ${PROJECTS_HOME+x} ]; then
 fi
 
 source ./projects/projects.sh
-source ./run-cmd.sh
+source ./utilities/run-cmd.sh
 
 function add-remote {
   name=$1

@@ -13,8 +13,8 @@ echo "Updating the License for Public Projects"
 echo "= = ="
 echo
 
-source ./update-file.sh
-source ./run-cmd.sh
+source ./utilities/update-file.sh
+source ./utilities/run-cmd.sh
 
 source ./projects/projects.sh
 
@@ -24,7 +24,7 @@ working_copies=(
 
 file_name="MIT-License.txt"
 
-src_dir='contributor-assets'
+src_dir='contributor-assets/license'
 
 pushd $PROJECTS_HOME > /dev/null
 
