@@ -16,11 +16,8 @@ echo
 source ./projects/ruby-projects.sh
 source ./update-file.sh
 
-# working_copies=(
-#   "${ruby_projects[@]}"
-# )
 working_copies=(
-  "message-store-postgres"
+  "${ruby_projects[@]}"
 )
 
 files=(

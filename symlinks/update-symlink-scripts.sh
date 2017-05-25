@@ -16,13 +16,17 @@ echo
 source ./projects/ruby-projects.sh
 source ./update-file.sh
 
+# working_copies=(
+#   "${ruby_projects[@]}"
+# )
+
 working_copies=(
-  "${ruby_projects[@]}"
+  "message-store-postgres"
 )
 
 file_name="library-symlinks.sh"
 
-src_dir='contributor-assets'
+src_dir='contributor-assets/symlinks'
 
 pushd $PROJECTS_HOME > /dev/null
 
