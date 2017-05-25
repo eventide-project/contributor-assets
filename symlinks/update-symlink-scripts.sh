@@ -14,14 +14,10 @@ echo "= = ="
 echo
 
 source ./projects/ruby-projects.sh
-source ./update-file.sh
-
-# working_copies=(
-#   "${ruby_projects[@]}"
-# )
+source ./utilities/update-file.sh
 
 working_copies=(
-  "message-store-postgres"
+  "${ruby_projects[@]}"
 )
 
 file_name="library-symlinks.sh"

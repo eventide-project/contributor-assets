@@ -14,7 +14,7 @@ echo "= = ="
 echo
 
 source ./projects/ruby-projects.sh
-source ./update-file.sh
+source ./utilities/update-file.sh
 
 working_copies=(
   "${ruby_projects[@]}"
