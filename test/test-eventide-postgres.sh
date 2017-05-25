@@ -18,8 +18,8 @@ echo "(Install Gems: $install_gems}"
 echo
 
 libraries=(
-  "event-source"
-  "event-source-postgres"
+  "message-store"
+  "message-store-postgres"
   "messaging"
   "messaging-postgres"
   "entity-projection"

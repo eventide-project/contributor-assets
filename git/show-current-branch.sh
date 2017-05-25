@@ -20,7 +20,7 @@ for dir in *; do
     continue
   fi
 
-  cd $dir
+  pushd $dir > /dev/null
 
   current_branch=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
 
@@ -33,7 +33,7 @@ for dir in *; do
 
   echo "$working_copy"
 
-  cd ..
+  popd > /dev/null
 done
 
 popd > /dev/null

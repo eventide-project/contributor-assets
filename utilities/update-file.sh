@@ -1,4 +1,4 @@
-source ./run-cmd.sh
+source ./utilities/run-cmd.sh
 
 function update-file {
   file_name=$1

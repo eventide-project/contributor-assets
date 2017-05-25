@@ -14,7 +14,7 @@ echo "= = ="
 echo
 
 source ./utilities/update-file.sh
-source ./run-cmd.sh
+source ./utilities/run-cmd.sh
 
 source ./projects/projects.sh
 

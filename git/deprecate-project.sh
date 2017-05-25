@@ -31,7 +31,7 @@ function deprecate-project {
 }
 
 source ./projects/projects.sh
-source ./run-cmd.sh
+source ./utilities/run-cmd.sh
 
 echo
 echo "Archiving Obsolete Projects"

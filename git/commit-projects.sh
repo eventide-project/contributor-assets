@@ -11,35 +11,43 @@ if [ -z ${PROJECTS_HOME+x} ]; then
   exit
 fi
 
-function push-project {
+function commit-project {
   name=$1
 
-  push_cmd="git push $remote_name $branch_name:$branch_name"
-  run-cmd "$push_cmd"
+  cmd="git add ."
+  run-cmd "$cmd"
+
+  cmd="git add . -u"
+  run-cmd "$cmd"
+
+  cmd="git commit -m $commit_message"
+  if [ "$DRY_RUN" = "true" ]; then
+    echo "(DRY RUN) $cmd"
+  else
+    echo "$cmd"
+    git commit -m "$commit_message" || true
+  fi
 }
 
 source ./projects/projects.sh
-source ./run-cmd.sh
+source ./utilities/run-cmd.sh
 
 working_copies=(
   "${projects[@]}"
 )
 
-remote_name=$1
-if [ -z "$remote_name" ]; then
-  echo "(The remote name was not specified as the first argument to this script. Using \"origin\" by default.)"
-  remote_name="origin"
-fi
-
-branch_name=$2
-if [ -z "$branch_name" ]; then
-  echo "(The branch name was not specified as the second argument to this script. Using \"master\" by default.)"
-  branch_name="master"
+commit_message=$1
+if [ -z "$commit_message" ]; then
+  echo "Usage: commit-projects.sh <commit message>"
+  exit
 fi
 
 echo
-echo "Pushing projects to $remote_name"
+echo "Committing projects projects to $remote_name"
 echo "= = ="
+echo
+
+echo "Commit message: $commit_message"
 echo
 
 pushd $PROJECTS_HOME > /dev/null
@@ -55,7 +63,7 @@ for name in "${working_copies[@]}"; do
     echo "$dir is not a git working copy. Skipping."
     echo
   else
-    push-project $name
+    commit-project $name
   fi
 
   popd > /dev/null

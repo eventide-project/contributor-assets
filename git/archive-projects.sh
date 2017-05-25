@@ -17,7 +17,7 @@ if [ -z ${PROJECTS_HOME+x} ]; then
 fi
 
 source ./projects/ruby-archived-projects.sh
-source ./run-cmd.sh
+source ./utilities/run-cmd.sh
 
 working_copies=(
   "${ruby_archived_projects[@]}"

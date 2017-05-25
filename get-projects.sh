@@ -53,7 +53,7 @@ function pull-repo {
 }
 
 source ./projects/projects.sh
-source ./run-cmd.sh
+source ./utilities/run-cmd.sh
 
 working_copies=(
   "${projects[@]}"
