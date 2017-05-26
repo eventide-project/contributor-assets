@@ -16,6 +16,7 @@ ruby_public_gem_projects=(
   "dependency"
   "entity-cache"
   "entity-projection"
+  "entity-snapshot-event-store"
   "entity-snapshot-postgres"
   "entity-store"
   "entity-store-postgres"
