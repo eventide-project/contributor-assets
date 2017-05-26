@@ -30,6 +30,7 @@ ruby_public_gem_projects=(
   "message-store-event-store"
   "messaging"
   "messaging-postgres"
+  "messaging-event-store"
   "retry"
   "schema"
   "set-attributes"
