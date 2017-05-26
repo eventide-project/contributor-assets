@@ -19,6 +19,7 @@ ruby_public_gem_projects=(
   "entity-snapshot-postgres"
   "entity-store"
   "entity-store-postgres"
+  "entity-store-event-store"
   "event-store-http"
   "eventide-postgres"
   "eventide-event-store"
