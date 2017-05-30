@@ -21,11 +21,7 @@ function increase-version {
   gemspec=$1
   level=$2
 
-  cmd="echo $gemspec"
-  run-cmd "$cmd"
-
-  cmd="echo $level"
-  run-cmd "$cmd"
+  echo "LEVEL=$level GEMSPEC=$gemspec ruby increase_version.rb"
 }
 
 echo
