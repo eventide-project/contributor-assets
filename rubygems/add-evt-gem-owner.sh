@@ -45,26 +45,13 @@ if [ -z ${PROJECTS_HOME+x} ]; then
   exit
 fi
 
-function run-cmd {
-  cmd=$1
-
-  if [ "$DRY_RUN" = "true" ]; then
-    msg="(DRY RUN) $cmd"
-    echo $msg
-  else
-    echo "$cmd"
-  fi
-
-  if [ "$DRY_RUN" != "true" ]; then
-    ($cmd)
-  fi
-}
-
 owner=$1
 if [ -z "$owner" ]; then
   echo "Usage: add-evt-gem-owner.sh <owner email address>"
   exit
 fi
+
+source ./utilities/run-cmd.sh
 
 echo
 echo "Adding owner to gems: $owner"
@@ -76,8 +63,8 @@ for gemname in "${gems[@]}"; do
   echo $evt_gemname
   echo "- - -"
 
-  echo "gem owner $evt_gemname -a $owner"
-  gem owner $evt_gemname -a $owner
+  add_cmd="gem owner $evt_gemname -a $owner"
+  run-cmd "$add_cmd"
 
   echo
 done
