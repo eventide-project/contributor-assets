@@ -27,6 +27,7 @@ libraries=(
   "entity-store"
   "entity-store-postgres"
   "entity-snapshot-postgres"
+  "consumer-postgres"
 )
 
 pushd $PROJECTS_HOME > /dev/null
