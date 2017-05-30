@@ -4,13 +4,17 @@ ${DRY_RUN:=true}
 
 set -e
 
+exec 1>&2
+
+echo "This line will appear in $LOG_FILE, not 'on screen'"
+
 if [ -z ${PROJECTS_HOME+x} ]; then
-  echo "PROJECTS_HOME is not set"
+  echo "PROJECTS_HOME is not set" >&2
   exit
 fi
 
 if [ -z ${LEVEL+x} ]; then
-  echo "LEVEL is not set"
+  echo "LEVEL is not set" >&2
   exit
 fi
 
@@ -21,7 +25,7 @@ function increase-version {
   gemspec=$1
   level=$2
 
-  echo "LEVEL=$level GEMSPEC=$gemspec ruby increase_version.rb"
+  echo "LEVEL=$level GEMSPEC=$gemspec ruby increase_version.rb" >&2
 }
 
 echo
@@ -43,7 +47,7 @@ for name in "${working_copies[@]}"; do
   pushd $dir > /dev/null
 
   for gemspec in *.gemspec; do
-    increase-version $gemspec, $LEVEL
+    increase-version $gemspec $LEVEL
   done
 
   popd > /dev/null
