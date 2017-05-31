@@ -80,7 +80,10 @@ for project in ${ruby_projects[@]}; do
   echo $project
   echo "- - -"
 
-  update-file "load_path.rb" "contributor-assets/temp" "$project"
+  update-file "standardized/load_path.rb" "contributor-assets/temp" "$project"
+  update-file "standardized/Gemfile" "contributor-assets/temp" "$project"
+  update-file "standardized/install_gems.sh" "contributor-assets/temp" "$project"
+
   separate-init-rb-and-load-rb "$project"
 
   echo
