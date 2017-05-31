@@ -8,76 +8,74 @@ function update-file {
   src="$src_dir/$file_name"
   dest="$dest_dir/$file_name"
 
-  if [ -z ${FORCE+x} ]; then
-    FORCE=false
-  fi
-  echo "FORCE is $FORCE ($dest will only be updated if it exists)"
+  force=$(boolean-env-var FORCE)
+  push=$(boolean-env-var PUSH)
 
-  if [ -z ${PUSH+x} ]; then
-    PUSH=false
-  fi
+  current_branch=$(git -C $dest_dir symbolic-ref -q --short HEAD)
 
-  if [ "$PUSH" = "true" ]; then
-    echo "PUSH is $PUSH. Updates will not be committed and pushed to origin master."
+  if $force; then
+    echo "FORCE is $force. $dest will be updated regardless of whether it exists"
   else
-    echo "PUSH is $PUSH. Updates will not be committed and pushed to origin master."
+    echo "FORCE is $force. $dest will only be updated if it exists"
   fi
 
-  if [ $FORCE = true ] || [ -f "$dest" ]; then
+  if $push; then
+    echo "PUSH is $push. Updates be committed and pushed to origin master"
+  else
+    echo "PUSH is $push. Updates will not be committed and pushed to origin master"
+  fi
 
-    if [ -f "$dest" ]; then
-      echo "$dest exists"
-    else
-      echo "$dest does not exist"
-    fi
+  if [ -f $dest ]; then
+    file_exists=true
+    echo "$dest exists"
+  else
+    file_exists=false
+    echo "$dest does not exist"
+  fi
 
-    if [[ "$src" -nt "$dest" ]]; then
-      echo "Updating $dest from $src"
-
-      pushd $dest_dir > /dev/null
-      pwd
-
-      if [ "$PUSH" = "true" ]; then
-        current_branch=$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
-        echo "Current Branch: $current_branch"
-
-        if [ master != "$current_branch" ]; then
-          checkout_master_cmd="git checkout master"
-          run-cmd "$checkout_master_cmd"
-        fi
-      fi
-
-      copy_cmd="cp -v ../$src ./"
-      run-cmd "$copy_cmd"
-
-      if [ "$PUSH" = "true" ]; then
-        git_add_cmd="git add $file_name"
-        run-cmd "$git_add_cmd"
-
-        git_commit_cmd="git commit -m \"$file_name is updated with the latest version\""
-        if [ "$DRY_RUN" = "true" ]; then
-          echo "(DRY RUN) $git_commit_cmd"
-        else
-          echo "$git_commit_cmd"
-          git commit -m "$file_name is updated with the latest version"
-        fi
-
-        git_push_cmd="git push origin master"
-        run-cmd "$git_push_cmd"
-
-        if [ master != "$current_branch" ]; then
-          co_crnt_cmd="git checkout $current_branch"
-          run-cmd "$co_crnt_cmd"
-        fi
-      fi
-
-      popd > /dev/null
-    else
-      echo "$file_name is already up-to-date"
+  if $file_exists; then
+    if [ $dest -nt $src ]; then
+      echo "$file_name is already up to date"
       echo "Not updating $dest with $file_name"
+      return
     fi
-  else
+  elif [ $force = "false" ]; then
     echo "$dest_dir does not have $file_name"
     echo "Not updating $dest with $file_name"
+    return
   fi
+
+  echo "Updating $dest from $src"
+
+  pushd $dest_dir > /dev/null
+
+  if $push; then
+    echo "Current Branch: $current_branch"
+
+    if [ $current_branch != "master" ]; then
+      checkout_master_cmd="git checkout master"
+      run-cmd "$checkout_master_cmd"
+    fi
+  fi
+
+  copy_cmd="cp -v ../$src ./$file_name"
+  run-cmd "$copy_cmd"
+
+  if $push; then
+    git_add_cmd="git add $file_name"
+    run-cmd "$git_add_cmd"
+
+    git_commit_cmd="git commit -m \"$file_name is updated with the latest version\""
+    run-cmd "$git_commit_cmd"
+
+    git_push_cmd="git push origin master"
+    run-cmd "$git_push_cmd"
+
+    if [ $current_branch != "master" ]; then
+      co_crnt_cmd="git checkout $current_branch"
+      run-cmd "$co_crnt_cmd"
+    fi
+  fi
+
+  popd > /dev/null
 }
