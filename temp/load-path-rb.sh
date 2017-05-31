@@ -42,7 +42,7 @@ for project in ${ruby_projects[@]}; do
   echo $project
   echo "- - -"
 
-  update-file "load_path.rb" "contributor-assets/rubygems" "$project"
+  update-file "load_path.rb" "contributor-assets/temp" "$project"
 
   echo
 
