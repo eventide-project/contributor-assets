@@ -59,6 +59,14 @@ function separate-init-rb-and-load-rb {
   echo_cmd="echo -e \"$init_rb\" > init.rb"
   run-cmd "$echo_cmd"
 
+  git_add_cmd="git add init.rb load_path.rb"
+  run-cmd "$git_add_cmd"
+
+  git_commit_cmd="git commit -m \"init.rb requires load_path.rb\""
+  run-cmd "$git_commit_cmd"
+
+  git_push_cmd="git push origin master"
+  run-cmd "$git_push_cmd"
 }
 
 echo
