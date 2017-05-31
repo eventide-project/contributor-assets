@@ -1,13 +1,17 @@
+source ./utilities/boolean-env-var.sh
+
 function run-cmd {
   cmd=$1
 
-  if [ "$DRY_RUN" = "true" ]; then
+  dry_run=$(boolean-env-var DRY_RUN)
+
+  if $dry_run; then
     echo "(DRY RUN) $cmd"
   else
     echo "$cmd"
   fi
 
-  if [ "$DRY_RUN" != "true" ]; then
+  if [ $dry_run = "false" ]; then
     ($cmd)
   fi
 }
