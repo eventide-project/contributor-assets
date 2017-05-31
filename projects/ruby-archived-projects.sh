@@ -31,6 +31,7 @@ ruby_archived_projects=(
   "http-stack-test"
   "metrics-stream-divergence"
   "ops-genie-client"
+  "process-host"
   "raygun-client"
   "runner"
   "serialize"
