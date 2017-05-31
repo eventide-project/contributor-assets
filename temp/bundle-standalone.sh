@@ -63,6 +63,31 @@ function separate-init-rb-and-load-rb {
   run-cmd "$git_push_cmd"
 }
 
+function remove-file {
+  file=$1
+  project=$2
+
+  pushd $project < /dev/null
+  if [ -f "$file" ]; then
+    echo "Removing $project/$file"
+
+    rm_cmd="rm -vf $file"
+    run-cmd "$rm_cmd"
+
+    git_add_cmd="git add $file"
+    run-cmd "$git_add_cmd"
+
+    git_commit_cmd="git commit -m \"$file is removed\""
+    run-cmd "$git_commit_cmd"
+
+    git_push_cmd="git push origin master"
+    run-cmd "$git_push_cmd"
+  else
+    echo "$project/$file is already removed; ignoring"
+  fi
+  popd < /dev/null
+}
+
 echo
 echo "Splitting init.rb Into init.rb And load_path.rb For Ruby Projects"
 echo "= = ="
@@ -82,6 +107,8 @@ for project in ${ruby_public_gem_projects[@]}; do
     update-file "install_gems.sh" "contributor-assets/standardized" "$project"
 
     separate-init-rb-and-load-rb "$project"
+
+    remove-file "set-local-gem-path.sh" "$project"
   fi
 
   echo
