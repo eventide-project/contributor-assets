@@ -14,7 +14,7 @@ fi
 source utilities/update-file.sh
 source utilities/run-cmd.sh
 
-source projects/projects.sh
+source projects/ruby-public-gem-projects.sh
 
 function extract-require-line {
   single_or_double_quote_pattern="['\"'\"'\\\"]"
@@ -48,12 +48,6 @@ function separate-init-rb-and-load-rb {
 
   init_rb="require_relative './load_path'\\n\\n$require_line"
 
-  echo "New init.rb:"
-  echo
-  echo "(start of file)"
-  echo -e $init_rb
-  echo "(end of file)"
-
   popd > /dev/null
 
   echo_cmd="echo -e \"$init_rb\" > init.rb"
@@ -76,15 +70,19 @@ echo
 
 pushd $PROJECTS_HOME > /dev/null
 
-for project in ${ruby_projects[@]}; do
+for project in ${ruby_public_gem_projects[@]}; do
   echo $project
   echo "- - -"
 
-  update-file "standardized/load_path.rb" "contributor-assets/temp" "$project"
-  update-file "standardized/Gemfile" "contributor-assets/temp" "$project"
-  update-file "standardized/install_gems.sh" "contributor-assets/temp" "$project"
+  if [ -f $project/load_path.rb ]; then
+    echo "Skipped (already has load_path.rb)"
+  else
+    update-file "load_path.rb" "contributor-assets/standardized" "$project"
+    update-file "Gemfile" "contributor-assets/standardized" "$project"
+    update-file "install_gems.sh" "contributor-assets/standardized" "$project"
 
-  separate-init-rb-and-load-rb "$project"
+    separate-init-rb-and-load-rb "$project"
+  fi
 
   echo
 done
