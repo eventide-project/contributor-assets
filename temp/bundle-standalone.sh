@@ -31,19 +31,7 @@ function extract-require-line {
   fi
 }
 
-echo
-echo "Splitting init.rb Into init.rb And load_path.rb For Ruby Projects"
-echo "= = ="
-echo
-
-pushd $PROJECTS_HOME > /dev/null
-
-for project in ${ruby_projects[@]}; do
-  echo $project
-  echo "- - -"
-
-  update-file "load_path.rb" "contributor-assets/temp" "$project"
-
+function separate-init-rb-and-load-rb {
   echo
 
   echo "Updating library require line"
@@ -70,6 +58,22 @@ for project in ${ruby_projects[@]}; do
 
   echo_cmd="echo -e \"$init_rb\" > init.rb"
   run-cmd "$echo_cmd"
+
+}
+
+echo
+echo "Splitting init.rb Into init.rb And load_path.rb For Ruby Projects"
+echo "= = ="
+echo
+
+pushd $PROJECTS_HOME > /dev/null
+
+for project in ${ruby_projects[@]}; do
+  echo $project
+  echo "- - -"
+
+  update-file "load_path.rb" "contributor-assets/temp" "$project"
+  separate-init-rb-and-load-rb "$project"
 
   echo
 done
