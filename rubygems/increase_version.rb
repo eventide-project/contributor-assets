@@ -79,5 +79,6 @@ STDOUT.puts <<~TEXT
 #{current_version}
 #{next_version}
 TEXT
+STDOUT.flush
 
 exec command unless dry_run
