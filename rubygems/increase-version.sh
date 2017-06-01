@@ -39,11 +39,10 @@ function commit-changes {
   current_version=$1
   next_version=$2
 
-  commit_message="Package version is increased from $current_version to $next_version"
-
   add_cmd="git add ."
   run-cmd "$add_cmd"
 
+  commit_message="Package version is increased from $current_version to $next_version"
   commit_cmd="git commit -m '$commit_message'"
   run-cmd "$commit_cmd"
 }
@@ -53,8 +52,54 @@ echo "Increase Version"
 echo "= = ="
 echo
 
-working_copies=(
+__working_copies=(
   "${ruby_public_gem_projects[@]}"
+)
+
+working_copies=(
+  "async-invocation"
+)
+
+____working_copies=(
+  "attribute"
+  "casing"
+  "clock"
+  "collection"
+  "component-host"
+  "configure"
+  "consumer"
+  "consumer-event-store"
+  "consumer-postgres"
+  "copy"
+  "cycle"
+  "dependency"
+  "entity-cache"
+  "entity-projection"
+  "entity-snapshot-event-store"
+  "entity-snapshot-postgres"
+  "entity-store"
+  "event-store-http"
+  "eventide-postgres"
+  "eventide-event-store"
+  "identifier-uuid"
+  "initializer"
+  "log"
+  "message-store"
+  "message-store-event-store"
+  "message-store-postgres"
+  "messaging"
+  "messaging-event-store"
+  "messaging-postgres"
+  "retry"
+  "schema"
+  "set-attributes"
+  "settings"
+  "subst-attr"
+  "telemetry"
+  "transform"
+  "try"
+  "validate"
+  "virtual"
 )
 
 pushd $PROJECTS_HOME > /dev/null

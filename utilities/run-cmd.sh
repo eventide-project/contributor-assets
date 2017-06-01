@@ -12,6 +12,6 @@ function run-cmd {
   fi
 
   if [ $dry_run = "false" ]; then
-    ($cmd)
+    eval $cmd
   fi
 }
