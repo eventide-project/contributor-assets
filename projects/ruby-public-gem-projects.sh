@@ -24,6 +24,7 @@ ruby_public_gem_projects=(
   "event-store-http"
   "eventide-postgres"
   "eventide-event-store"
+  "generator"
   "identifier-uuid"
   "initializer"
   "log"
