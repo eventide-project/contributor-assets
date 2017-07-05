@@ -6,7 +6,7 @@ ruby_public_gem_projects=(
   "casing"
   "clock"
   "collection"
-  "command-line-project-generator"
+  "command-line-component-generator"
   "component-host"
   "configure"
   "consumer"
