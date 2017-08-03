@@ -43,5 +43,7 @@ ruby_public_gem_projects=(
   "transform"
   "try"
   "validate"
+  "view-data-commands"
+  "view-data-pg"
   "virtual"
 )
