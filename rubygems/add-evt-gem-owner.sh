@@ -7,6 +7,7 @@ gems=(
   "clock"
   "configure"
   "collection"
+  "command_line-component_generator"
   "cycle"
   "dependency"
   "entity_cache"
@@ -33,6 +34,8 @@ gems=(
   "telemetry-logger"
   "transform"
   "validate"
+  "view_data-commands"
+  "view_data-pg"
   "virtual"
 )
 
