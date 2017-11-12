@@ -5,6 +5,11 @@ tools=(
   "event-store-utils"
 )
 
+documentation=(
+  "docs"
+)
+
 other_public_projects=(
   "${tools[@]}"
+  "${docs[@]}"
 )
