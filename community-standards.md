@@ -15,8 +15,8 @@ Conflict is a necessary element of negotiation of meaning. We hold conflict mean
 ## Harassment
 Harassment, persecution, or any form of exploitation will lead to immediate banning from the Eventide community, and removal from all of its communication media.
 
-## Judgments
-Judgments will be rendered by Eventide community leaders. Decisions will be made as open and transparent as possible and as practicable per the circumstances and conditions of any transgression or complaint.
-
 ## Expulsion
 In the event that a decision is made to remove a member from the Eventide community, the removal will be carried out by the Eventide community leaders. When possible and practicable, the community as a whole will be notified of any expulsion of a community member.
+
+## Judgments
+Judgments will be rendered by Eventide community leaders. Decisions will be made as open and transparent as possible and as practicable per the circumstances and conditions of any transgression or complaint.
