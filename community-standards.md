@@ -13,10 +13,15 @@ Community members are expected to represent themselves in Eventide online media 
 Conflict is a necessary element of negotiation of meaning. We hold conflict meaningfully, and as such it is a sacred process of the Eventide community.  Any action that harms the ability to hold meaningful conflict is strictly forbidden. Digressions into personal attacks will be scrutinized strictly for dishonorable conduct, and can lead to a community member being removed from Eventide community communication media as well as in-person gatherings.
 
 ## Harassment
-Harassment, persecution, or any form of exploitation will lead to immediate banning from the Eventide community, and removal from all of its communication media.
+Harassment, persecution, predation, duplicity, negotiating in bad faith, or any form of exploitation or harm-profiting will lead to immediate banning from the Eventide community, and removal from all of its communication media.
 
 ## Expulsion
-In the event that a decision is made to remove a member from the Eventide community, the removal will be carried out by the Eventide community principals. When possible and practicable, the community as a whole will be notified of any expulsion of a community member.
+In the event that a decision is made to remove a member from the Eventide community, the removal will be implemented by the Eventide community principals. When possible and practicable, the community as a whole will be notified of any expulsion of a community member.
+
+## Right to Participate
+The Eventide Project's community is open to all who want to learn and participate, and who are willing to hold themselves to the Eventide community standards.
+
+Eventide community principals reserve the right to remove anyone from the community, its communications media, and in-person gatherings for any reason and at any time.
 
 ## Judgments
 Judgments will be rendered by Eventide community leaders. Decisions will be made as open and transparent as possible and as practicable per the circumstances and conditions of any transgression or complaint.
