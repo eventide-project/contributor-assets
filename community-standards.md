@@ -24,4 +24,4 @@ The Eventide Project's community is open to all who want to learn and participat
 Eventide community principals reserve the right to remove anyone from the community, its communications media, and in-person gatherings for any reason and at any time.
 
 ## Judgments
-Judgments will be rendered by Eventide community leaders. Decisions will be made as open and transparent as possible and as practicable per the circumstances and conditions of any transgression or complaint.
+Judgments will be rendered by Eventide community principals. Decisions will be made as open and transparent as possible and as practicable per the circumstances and conditions of any transgression or complaint.
