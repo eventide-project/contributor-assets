@@ -19,9 +19,7 @@ Harassment, persecution, predation, duplicity, negotiating in bad faith, or any 
 In the event that a decision is made to remove a member from the Eventide community, the removal will be implemented by the Eventide community principals. When possible and practicable, the community as a whole will be notified of any expulsion of a community member.
 
 ## Right to Participate
-The Eventide Project's community is open to all who want to learn and participate, and who are willing to hold themselves to the Eventide community standards.
-
-Eventide community principals reserve the right to remove anyone from the community, its communications media, and in-person gatherings for any reason and at any time.
+The Eventide Project's community is open to all who want to learn and participate, and who are willing to hold themselves to the Eventide community standards. Eventide community principals reserve the right to remove anyone from the community, its communications media, and in-person gatherings for any reason and at any time.
 
 ## Judgments
 Judgments will be made by Eventide community principals, and will be made as open and transparent as possible and as practicable per the circumstances and conditions of any transgression or complaint.
