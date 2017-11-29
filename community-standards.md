@@ -1,4 +1,4 @@
-# Eventide Community Guidelines
+# Eventide Community Standards
 
 The Eventide community is the most valuable knowledge resource supporting the Eventide project. It’s more instrumental than any of the documentation, training materials, or samples apps that help people understand and work with the tools and the architecture.
 
