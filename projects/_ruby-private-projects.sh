@@ -1,0 +1,1 @@
+/Users/sbellware/projects/eventide/contributor-assets-private-projects/ruby-private-projects.sh

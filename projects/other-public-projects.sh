@@ -12,5 +12,5 @@ documentation=(
 
 other_public_projects=(
   "${tools[@]}"
-  "${docs[@]}"
+  "${documentation[@]}"
 )
