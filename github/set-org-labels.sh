@@ -1,7 +1,5 @@
 set -u
 
-# DRY_RUN=true
-
 if [ -z ${DRY_RUN+x} ]; then
   DRY_RUN=false
 fi
@@ -16,17 +14,12 @@ if [ -z ${GITHUB_TOKEN+x} ]; then
 fi
 
 source ./projects/projects.sh
-source ./utilities/run-cmd.sh
 source ./github/set-repo-labels.sh
 
 org_name='eventide-project'
 
-# repos=(
-#   "${projects[@]}"
-# )
-
 repos=(
-  "label-test"
+  "${projects[@]}"
 )
 
 echo
