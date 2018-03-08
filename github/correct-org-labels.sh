@@ -14,12 +14,16 @@ if [ -z ${GITHUB_TOKEN+x} ]; then
 fi
 
 source ./projects/projects.sh
-source ./github/set-repo-labels.sh
+source ./github/correct-repo-labels.sh
 
 org_name='eventide-project'
 
 # repos=(
 #   "${projects[@]}"
+# )
+
+# repos=(
+#   "${examples[@]}"
 # )
 
 repos=(
@@ -32,8 +36,7 @@ echo "= = ="
 echo
 
 for repo in "${repos[@]}"; do
-  set-repo-labels "$repo" "$org_name" "$GITHUB_TOKEN"
+  correct-repo-labels "$repo" "$org_name" "$GITHUB_TOKEN"
 done
 
 echo "= = ="
-

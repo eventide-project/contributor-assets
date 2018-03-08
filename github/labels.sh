@@ -35,8 +35,8 @@ standard_labels=(
   '{"name":"help wanted","description":"Looking for someone to take on the work, with guidance and stewardship from project principals","color":"d3fc62"}'
   '{"name":"improvement","description":"Something that will be implemented to make an improvement or enhancement","color":"c2e0c6"}'
   '{"name":"materials","description":"Documentation, presentations, work shops","color":"fffaf0"}'
-  '{"name":"mistake","description":"Is not quite right and needs correction","color":"ff4500"}'
-  '{"name":"problem","description":"Malfunction, mistake, bug, defect, or aberration that is suspected to be wrong or a malfunction","color":"d91f0b"}'
+  '{"name":"mistake","description":"Something is not right or does not meet standards and needs correction","color":"ff4500"}'
+  '{"name":"problem","description":"Malfunction, bug, defect, aberration, irregularity, flaw, error, fault, and the like","color":"d91f0b"}'
   '{"name":"question","description":"A matter that requires clarification","color":"22f726"}'
   '{"name":"suggestion","description":"A feature or a change you would like to have considered","color":"d4c5f9"}'
 )
