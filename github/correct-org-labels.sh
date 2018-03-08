@@ -17,18 +17,18 @@ source ./projects/projects.sh
 source ./github/correct-repo-labels.sh
 
 org_name='eventide-project'
-
 # repos=(
 #   "${projects[@]}"
 # )
 
+# org_name='eventide-examples'
 # repos=(
 #   "${examples[@]}"
 # )
 
-repos=(
-  "label-test"
-)
+# repos=(
+#   "label-test"
+# )
 
 echo
 echo "Setting Labels for $org_name"
