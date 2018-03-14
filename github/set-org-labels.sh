@@ -22,8 +22,12 @@ org_name='eventide-project'
 #   "${projects[@]}"
 # )
 
+# repos=(
+#   "label-test"
+# )
+
 repos=(
-  "label-test"
+  "eventide"
 )
 
 echo
