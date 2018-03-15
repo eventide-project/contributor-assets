@@ -6,14 +6,18 @@ if [ -z ${DRY_RUN+x} ]; then
   DRY_RUN=false
 fi
 
+echo
+
 if [ -z ${PROJECTS_HOME+x} ]; then
   echo "PROJECTS_HOME is not set"
   exit
 fi
 
-if [ -z ${GIT_AUTHORITY_PATH+x} ]; then
-  echo "GIT_AUTHORITY_PATH is not set"
-  exit
+remote_authority_path="git@github.com:eventide-project"
+
+if [ ! -z ${GIT_AUTHORITY_PATH+x} ]; then
+  echo "The GIT_AUTHORITY_PATH environment variable is set: $GIT_AUTHORITY_PATH. Using it."
+  remote_authority_path=$GIT_AUTHORITY_PATH
 fi
 
 function clone-repo {
@@ -61,14 +65,12 @@ working_copies=(
 
 remote_name=$1
 if [ -z "$remote_name" ]; then
-  echo "(The remote was not specified as the argument to this script. Using \"origin\" by default.)"
+  echo "The remote was not specified as the argument to this script. Using \"origin\" by default."
   remote_name="origin"
 fi
 
-remote_authority_path=$GIT_AUTHORITY_PATH
-
 echo
-echo "Getting code from $remote_authority_path"
+echo "Getting code from $remote_authority_path ($remote_name)"
 echo "= = ="
 echo
 
