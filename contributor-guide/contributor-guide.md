@@ -24,9 +24,13 @@ The website also provides some basic examples of using the toolkit's features:
 
 [https://eventide-project.org/introduction](https://eventide-project.org/introduction)
 
+A complete list of Eventide's constituent libraries and tools can also be found in the project's website:
+
+[https://eventide-project.org/libraries](https://eventide-project.org/libraries)
+
 ### Contributor Assets
 
-We maintain a set of tools and scripts to help work with Eventide's 50 or so constituent libraries and tools.
+We maintain a set of tools and scripts to help work with Eventide's constituent libraries and tools.
 
 The repository for these tools is `contributor-assets`, and can be browsed on GitHub:
 
@@ -133,3 +137,19 @@ Principals will also provide any necessary guidance, as well as on-going and fin
 - When the change is ready for release, the project principal will increase the version, and commit that change
 - Version number changes are always made in their own commits with no other changes
 - The project principal will create a new Gem package and publish it to RubyGems.org
+
+## More Reading
+
+### Doctrine of Useful Objects
+
+The overall design and implementation ethos is explained in the Doctrine of Useful Objects article. The article is published in a repository that includes example code.
+
+Read the article at:
+
+[https://github.com/sbellware/useful-objects/blob/master/README.md](https://github.com/sbellware/useful-objects/blob/master/README.md)
+
+### Project History
+
+Read more about the project's history on the Eventide website:
+
+[https://eventide-project.org/history](https://eventide-project.org/history)
