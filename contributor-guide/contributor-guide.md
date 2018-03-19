@@ -50,11 +50,13 @@ Read the [get-projects.md](https://github.com/eventide-project/contributor-asset
 
 ## Background
 
-### Standards Are Not Optional
+### Standards Aren't Optional
 
 There's very little in the Eventide project codebase that doesn't adhere to standards and practices. Everything you see is the code is done purposefully. The code isn't a patchwork of individual styles, and new contributors don't have license to inject personal style.
 
 The project's standards are not written down. They can be learned through observation and from the guidance of the project principals that you will work with at the outset of your contributions.
+
+Do your best and learn as you go from the observations you're making about the code and libraries that you're working with.
 
 ### Get Familiar With the Code Style
 
