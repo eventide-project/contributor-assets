@@ -16,7 +16,7 @@ fi
 remote_authority_path="git@github.com:eventide-project"
 
 if [ ! -z ${GIT_AUTHORITY_PATH+x} ]; then
-  echo "The GIT_AUTHORITY_PATH environment variable is set: $GIT_AUTHORITY_PATH. Using it."
+  echo "The GIT_AUTHORITY_PATH environment variable is set: $GIT_AUTHORITY_PATH. It will be used for this script."
   remote_authority_path=$GIT_AUTHORITY_PATH
 fi
 
