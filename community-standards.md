@@ -6,7 +6,7 @@ Protecting the integrity of the negotiation of meaning and the relationships tha
 
 The following guidelines help Eventide community principals protect that integrity, and codify the standards that community members are held to:
 
-## Anonymity
+## No Anonymity
 Community members are expected to represent themselves in Eventide online media to the fullest extent possible of authenticity. Obfuscation of real identity is strictly proscribed. Community members are expected to use their real names in all media and communications. In media that have graphic avatars, community members are expected to use real photos of themselves. Exceptions are made in cases where a member’s safety is legitimately jeopardized without anonymity and obfuscation.
 
 ## Conflict
