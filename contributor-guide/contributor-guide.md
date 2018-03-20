@@ -12,7 +12,7 @@ Review the Eventide community protocols:
 
 ### Get to Know the People in the Community
 
-The members of the Eventide community are the best resource for getting oriented to making contributions to the project. The members of the community gather on the project's Slack workspace. Join the org at:
+The members of the Eventide community are the best resource for getting oriented to making contributions to the project. The members of the community gather on the project's Slack workspace. Join the workspace at:
 
 [https://eventide-project-slack.herokuapp.com](https://eventide-project-slack.herokuapp.com)
 
