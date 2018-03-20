@@ -1,3 +1,5 @@
+<img src="https://s3.amazonaws.com/media.eventide-project.org/eventide-icon-100.png" />
+
 # Eventide Contributor Guide
 
 ## Getting Started

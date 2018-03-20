@@ -1,3 +1,5 @@
+<img src="https://s3.amazonaws.com/media.eventide-project.org/eventide-icon-100.png" />
+
 # Eventide Project Contributor Assets
 
 A set of tools and scripts to help work with Eventide's constituent libraries and tools.
