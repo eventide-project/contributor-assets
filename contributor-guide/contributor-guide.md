@@ -12,7 +12,7 @@ Review the Eventide community protocols:
 
 ### Get to Know the People in the Community
 
-The members of the Eventide community are the best resource for getting oriented to making contributions to the project. The members of the community gather on the project's Slack org. Join the org at:
+The members of the Eventide community are the best resource for getting oriented to making contributions to the project. The members of the community gather on the project's Slack workspace. Join the org at:
 
 [https://eventide-project-slack.herokuapp.com](https://eventide-project-slack.herokuapp.com)
 
@@ -116,7 +116,9 @@ You can view all of Eventide's work items at:
 
 ### Communicate Your Interest in a Work Item
 
-Talk to the project principals either on the project's Slack org, or by commenting on the GitHub issue.
+Talk to the project principals either on the project's Slack workspace, or by commenting on the GitHub issue.
+
+If you're using the Slack workspace, use the #development channel on Slack for these kinds of conversations.
 
 Project principals will provide detailed explanations and background for the item.
 
@@ -128,7 +130,7 @@ Principals will also provide any necessary guidance, as well as on-going and fin
 
 - Create a fork of the library (or libraries) that the issue that you're working on affects
 - Work on your fork
-- Communicate progress through the Eventide Slack org
+- Communicate progress through the Eventide Slack workspace
 - You'll receive guidance and support from project principals, including pairing via remote screen sharing, chat sessions, email, and whatever media supports momentum
 - When the work is complete, submit a pull request
 - Final review will be done on the pull request, but since review has been taking place incrementally and progressively, the final review should be low-impact
