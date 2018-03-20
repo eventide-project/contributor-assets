@@ -148,6 +148,8 @@ Principals will also provide any necessary guidance, as well as on-going and fin
 
 ## More Reading
 
+The following resources are not required reading, but you may find them helpful.
+
 ### Doctrine of Useful Objects
 
 The overall design and implementation ethos is explained in the Doctrine of Useful Objects article. The article is published in a repository that includes example code.
