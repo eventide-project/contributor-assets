@@ -54,7 +54,7 @@ Install the `contributor-assets` tools by cloning the repository:
 
 Read the [get-projects.md](https://github.com/eventide-project/contributor-assets/blob/master/get-projects.md) for instructions on how to use the `contributor-assets` tools to get the Eventide Project code onto your machine.
 
-## Background
+## Expectations
 
 ### Standards Aren't Optional
 
