@@ -30,7 +30,7 @@ A complete list of Eventide's constituent libraries and tools can also be found 
 
 [https://eventide-project.org/libraries](https://eventide-project.org/libraries)
 
-### Contributor Assets
+### Get the Contributor Assets Tools
 
 We maintain a set of tools and scripts to help work with Eventide's constituent libraries and tools.
 
@@ -38,7 +38,9 @@ The repository for these tools is `contributor-assets`, and can be browsed on Gi
 
 [https://github.com/eventide-project/contributor-assets](https://github.com/eventide-project/contributor-assets)
 
-First, make a parent directory, `eventide` for example, into which you will clone the Eventide repositories.
+First, get the `contributor-assets` tools:
+
+Make a parent directory, `eventide` for example, into which you will clone the Eventide repositories, including `contributor-assets`.
 
 `mkdir eventide`
 
@@ -46,13 +48,15 @@ And then change directories into this new directory.
 
 `cd eventide`
 
-Install the `contributor-assets` tools by cloning the repository:
+Clone the `contributor-assets` repository:
 
 `git clone git@github.com:eventide-project/contributor-assets.git`
 
 ### Get All the Code
 
-Read the [get-projects.md](https://github.com/eventide-project/contributor-assets/blob/master/get-projects.md) for instructions on how to use the `contributor-assets` tools to get the Eventide Project code onto your machine.
+Read the for instructions on how to use the `contributor-assets` tools to get all of the Eventide code onto your machine:
+
+[get-projects.md](https://github.com/eventide-project/contributor-assets/blob/master/get-projects.md)
 
 ## Expectations
 
