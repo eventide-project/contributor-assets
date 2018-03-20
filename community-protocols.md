@@ -1,6 +1,6 @@
 <img src="https://s3.amazonaws.com/media.eventide-project.org/eventide-icon-100.png" />
 
-# Eventide Community Standards
+# Eventide Community Protocols
 
 The Eventide community is the most valuable knowledge resource supporting the Eventide project. It’s more instrumental than any of the documentation, training materials, or samples apps that help people understand and work with the tools and the architecture.
 

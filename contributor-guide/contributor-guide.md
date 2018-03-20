@@ -4,11 +4,11 @@
 
 ## Getting Started
 
-### Community Standards
+### Community Protocols
 
-Review the Eventide community standards:
+Review the Eventide community protocols:
 
-[https://github.com/eventide-project/contributor-assets/blob/master/community-standards.md](https://github.com/eventide-project/contributor-assets/blob/master/community-standards.md)
+[https://github.com/eventide-project/contributor-assets/blob/master/community-protocols.md](https://github.com/eventide-project/contributor-assets/blob/master/community-protocols.md)
 
 ### Get to Know the People in the Community
 
