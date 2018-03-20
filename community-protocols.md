@@ -25,3 +25,7 @@ The Eventide Project's community is open to all who want to learn and participat
 
 ## Judgments
 Judgments will be made by Eventide community principals, and will be made as open and transparent as possible and as practicable per the circumstances and conditions of any transgression or complaint.
+
+- - -
+
+See also: [Eventide Contributor Bill of Rights](https://github.com/eventide-project/contributor-assets/blob/master/bill-of-rights.md)
