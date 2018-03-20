@@ -2,7 +2,7 @@
 
 # Eventide Contributor Guide
 
-## Getting Started
+## Background
 
 ### Contributor Bill of Rights
 
@@ -35,6 +35,8 @@ The website also provides some basic examples of using the toolkit's features:
 A complete list of Eventide's constituent libraries and tools can also be found in the project's website:
 
 [https://eventide-project.org/libraries](https://eventide-project.org/libraries)
+
+## Getting Started
 
 ### Get the Contributor Assets Tools
 

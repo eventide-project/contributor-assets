@@ -2,7 +2,7 @@
 
 # Eventide Contributor Bill of Rights
 
-### As a contributor:
+### AS A CONTRIBUTOR:
 
 ### You have the right to try
 
