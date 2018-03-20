@@ -28,4 +28,4 @@ Judgments will be made by Eventide community principals, and will be made as ope
 
 - - -
 
-See also: [Eventide Contributor Bill of Rights](https://github.com/eventide-project/contributor-assets/blob/master/bill-of-rights.md)
+See also: [Eventide Contributor Bill of Rights](https://github.com/eventide-project/contributor-assets/blob/master/contributor-guide/bill-of-rights.md)

@@ -8,7 +8,7 @@
 
 Read the Eventide project's contributors' bill of rights:
 
-[https://github.com/eventide-project/contributor-assets/blob/master/bill-of-rights.md](https://github.com/eventide-project/contributor-assets/blob/master/bill-of-rights.md)
+[https://github.com/eventide-project/contributor-assets/blob/master/contributor-guide/bill-of-rights.md](https://github.com/eventide-project/contributor-assets/blob/master/contributor-guide/bill-of-rights.md)
 
 ### Community Protocols
 
