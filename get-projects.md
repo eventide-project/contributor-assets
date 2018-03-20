@@ -8,7 +8,7 @@ The `get-projects.sh` script will clone or pull all project repositories to your
 
 If the working copy directory is not in the project directory, the repository will be downloaded via `git clone`. If there is a corresponding working copy, the working copy will be updated via `git pull`.
 
-### Eventide Directory
+## Eventide Directory
 
 Create a directory that will be the parent directory for all of the Eventide libraries and tools. All repositories will be cloned into this directory.
 
@@ -24,7 +24,7 @@ And then change directories into this new directory.
 
 `cd eventide`
 
-### PROJECTS_HOME Environment Variable
+## PROJECTS_HOME Environment Variable
 
 In order for the `get-projects.sh` script to work, you must set am environment variable.
 
@@ -38,17 +38,17 @@ You can set the variable in your current shell, on the command line when you exe
 
 `export PROJECTS_HOME=~/eventide`
 
-### Clone the "contributor-assets" Repository
+## Clone the "contributor-assets" Repository
 
 From the "eventide" directory
 
 `git clone git@github.com:eventide-project/contributor-assets.git`
 
-### Change Directory to the Eventide Directory
+## Change Directory to the Eventide Directory
 
 `cd eventide`
 
-### Run the Script
+## Run the Script
 
 From the command line, within the "eventide" directory:
 
