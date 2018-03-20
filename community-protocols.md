@@ -6,7 +6,7 @@ The Eventide community is the most valuable knowledge resource supporting the Ev
 
 Protecting the integrity of the negotiation of meaning and the relationships that make up the Eventide community is a key responsibility of community principals.
 
-The following guidelines help Eventide community principals protect that integrity, and codify the standards that community members are held to:
+The following guidelines help Eventide community principals protect that integrity, and codify the standards that community members are held to.
 
 ## No Anonymity
 Community members are expected to represent themselves in Eventide online media to the fullest extent possible of authenticity. Obfuscation of real identity is strictly proscribed. Community members are expected to use their real names in all media and communications. In media that have graphic avatars, community members are expected to use real photos of themselves. Exceptions are made in cases where a member’s safety is legitimately jeopardized without anonymity and obfuscation.
