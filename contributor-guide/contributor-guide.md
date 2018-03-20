@@ -92,7 +92,7 @@ All of the Eventide repositories use a standardized set of issue labels that are
 
 Read the labels document:
 
-[https://github.com/eventide-project/contributor-assets/contributor-guide/labels.md](https://github.com/eventide-project/contributor-assets/contributor-guide/labels.md)
+[https://github.com/eventide-project/contributor-assets/blob/master/contributor-guide/labels.md](https://github.com/eventide-project/contributor-assets/blob/master/contributor-guide/labels.md)
 
 ### The "entry level" Label
 
