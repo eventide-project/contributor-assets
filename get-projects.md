@@ -1,3 +1,5 @@
+<img src="https://s3.amazonaws.com/media.eventide-project.org/eventide-icon-100.png" />
+
 # Downloading the Eventide Project Code
 
 The `get-projects.sh` script will clone or pull all project repositories to your device.
