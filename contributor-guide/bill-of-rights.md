@@ -10,7 +10,7 @@
 
 ### You have a right to be treated with honor and integrity
 
-### You have a right to the understanding that your attention may not be immediately-available
+### You have a right to the consideration that your time and attention may not be immediately-available
 
 - - -
 
