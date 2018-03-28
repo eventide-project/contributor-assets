@@ -15,6 +15,7 @@ ruby_public_gem_projects=(
   "copy"
   "cycle"
   "dependency"
+  "diagnostics-sample"
   "entity-cache"
   "entity-projection"
   "entity-snapshot-event-store"
