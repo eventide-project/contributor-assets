@@ -33,6 +33,9 @@ libraries=(
 pushd $PROJECTS_HOME > /dev/null
 
 for name in "${libraries[@]}"; do
+  echo
+  echo
+  echo
   echo $name
   echo "- - -"
 
