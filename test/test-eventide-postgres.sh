@@ -37,7 +37,7 @@ for name in "${libraries[@]}"; do
   echo
   echo
   echo $name
-  echo "- - -"
+  echo "= = = = = = = = = = = = = = = = = = = = = = = = = ="
 
   dir=$name
 
