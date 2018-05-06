@@ -1,4 +1,15 @@
 #!/usr/bin/env ruby
+#
+# Usage
+#
+# This script is intended to be run after the commit histories in
+# account-component and funds-transfer-component have been corrected and pushed
+# to the git origin. It must be run in the top level workshop directory.
+#
+# After running the script, the step scripts in the workshop project are
+# altered to reference the new commits. Do not change the commit messages, as
+# this script will use the commit messages to look up the commit SHAs.
+#
 
 class Parse
   attr_reader :text
