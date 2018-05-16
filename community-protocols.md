@@ -4,7 +4,7 @@
 
 The Eventide community is the most valuable knowledge resource supporting the Eventide project. It’s more instrumental than any of the documentation, training materials, or samples apps that help people understand and work with the tools and the architecture.
 
-Protecting the integrity of the negotiation of meaning and the relationships that make up the Eventide community is a key responsibility of community principals.
+Protecting the integrity of the negotiation of meaning and the valuable relationships that make up the Eventide community is a key responsibility of community principals.
 
 The following guidelines help Eventide community principals protect that integrity, and codify the standards that community members are held to.
 
