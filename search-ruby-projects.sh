@@ -28,5 +28,5 @@ projects=(
 for dir in "${projects[@]}"; do
   full_dir="$PROJECTS_HOME/$dir"
 
-  grep --exclude '*/gems/*' --exclude '*/.git/*' --exclude 'tags' -E -r -n "$search_term" $full_dir || true
+  grep --exclude-dir 'gems' --exclude-dir '.git' --exclude 'tags' -E -r -n "$search_term" $full_dir || true
 done
