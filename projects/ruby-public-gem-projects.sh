@@ -32,6 +32,7 @@ ruby_public_gem_projects=(
   "message-store"
   "message-store-event-store"
   "message-store-postgres"
+  "message-store-postgres-database"
   "messaging"
   "messaging-event-store"
   "messaging-postgres"
