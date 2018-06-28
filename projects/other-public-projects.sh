@@ -8,6 +8,7 @@ tools=(
 documentation=(
   "docs"
   "documentation-request"
+  "useful-objects"
 )
 
 other_public_projects=(
