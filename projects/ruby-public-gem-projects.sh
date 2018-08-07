@@ -13,7 +13,6 @@ ruby_public_gem_projects=(
   "consumer-event-store"
   "consumer-postgres"
   "copy"
-  "cycle"
   "dependency"
   "diagnostics-sample"
   "entity-cache"
