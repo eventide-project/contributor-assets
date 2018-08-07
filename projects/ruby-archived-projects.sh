@@ -5,6 +5,7 @@ ruby_archived_projects=(
   "connection-client"
   "connection-server"
   "controls"
+  "cycle"
   "dns-resolve-host"
   "error-data"
   "error-telemetry-component"
