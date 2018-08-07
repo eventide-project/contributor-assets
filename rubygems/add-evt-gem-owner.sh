@@ -26,6 +26,7 @@ gems=(
   "messaging"
   "messaging-postgres"
   "messaging-event_store"
+  "poll"
   "schema"
   "set_attributes"
   "settings"
