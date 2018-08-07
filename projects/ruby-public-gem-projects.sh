@@ -36,6 +36,7 @@ ruby_public_gem_projects=(
   "messaging"
   "messaging-event-store"
   "messaging-postgres"
+  "poll"
   "reflect"
   "retry"
   "schema"
