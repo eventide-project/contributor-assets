@@ -7,6 +7,8 @@ ruby_archived_projects=(
   "controls"
   "cycle"
   "dns-resolve-host"
+  "entity-store-postgres"
+  "entity-store-event-store"
   "error-data"
   "error-telemetry-component"
   "event-source"
