@@ -25,8 +25,8 @@ libraries=(
   "entity-projection"
   "entity-cache"
   "entity-store"
-  "entity-store-postgres"
-  "entity-snapshot-postgres"
+  "entity-store-postgres-test"
+  "entity-snapshot-postgres-test"
   "consumer-postgres"
 )
 

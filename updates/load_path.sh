@@ -27,7 +27,7 @@ echo
 
 pushd $PROJECTS_HOME > /dev/null
 
-for project in ${projects[@]}; do
+for project in ${working_copies[@]}; do
   echo $project
   echo "- - -"
 
