@@ -11,7 +11,12 @@ documentation=(
   "useful-objects"
 )
 
+administrative=(
+  "project-status"
+)
+
 other_public_projects=(
+  "${administrative[@]}"
   "${tools[@]}"
   "${documentation[@]}"
 )
