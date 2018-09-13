@@ -7,7 +7,6 @@ tools=(
 
 documentation=(
   "docs"
-  "documentation-request"
   "useful-objects"
 )
 
