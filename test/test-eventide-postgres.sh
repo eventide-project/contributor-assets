@@ -4,10 +4,10 @@ set -e
 
 clear
 
-install_gems=false
+install_gems=true
 if [ ! -z ${INSTALL_GEMS+x} ]; then
-  if [ $INSTALL_GEMS = true ]; then
-    install_gems=true
+  if [ $INSTALL_GEMS = false ]; then
+    install_gems=false
   fi
 fi
 
