@@ -1,10 +1,12 @@
 set -e
 
 ruby_archived_projects=(
+  "collection"
   "connection"
   "connection-client"
   "connection-server"
   "controls"
+  "copy"
   "cycle"
   "dns-resolve-host"
   "entity-store-postgres"
