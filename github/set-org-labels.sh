@@ -27,7 +27,11 @@ org_name='eventide-project'
 # )
 
 repos=(
-  "eventide"
+  "poll"
+  "message-store-postgres-database"
+  "funds-transfer-component"
+  "account-component"
+  "workshop"
 )
 
 echo
