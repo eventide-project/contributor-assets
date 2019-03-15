@@ -1,4 +1,4 @@
-# Community Protocols
+# Eventide Generalized Community Protocols
 
 The community is the most valuable knowledge resource supporting our efforts. It’s more instrumental than any of the documentation, training materials, or samples apps that help people understand and work with the tools and the architecture.
 
@@ -26,4 +26,4 @@ Judgments will be made by community principals, and will be made as open and tra
 
 - - -
 
-See also: [Contributor Bill of Rights](https://github.com/eventide-project/contributor-assets/blob/master/protocols/bill-of-rights.md)
+See also: [Contributor Bill of Rights](https://github.com/eventide-project/contributor-assets/blob/master/protocols/generalized-contributor-bill-of-rights.md)
