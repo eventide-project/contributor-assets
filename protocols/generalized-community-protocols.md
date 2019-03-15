@@ -1,4 +1,4 @@
-# Eventide Generalized Community Protocols
+# Eventide Community Protocols
 
 The community is the most valuable knowledge resource supporting our efforts. It’s more instrumental than any of the documentation, training materials, or samples apps that help people understand and work with the tools and the architecture.
 

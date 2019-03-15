@@ -1,4 +1,4 @@
-# Eventide Generalized Contributor Bill of Rights
+# Eventide Contributor Bill of Rights
 
 ### AS A CONTRIBUTOR:
 
