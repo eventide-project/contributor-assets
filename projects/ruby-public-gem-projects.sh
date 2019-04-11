@@ -15,6 +15,7 @@ ruby_public_gem_projects=(
   "diagnostics-sample"
   "entity-cache"
   "entity-projection"
+  "entity-query-postgres"
   "entity-snapshot-event-store"
   "entity-snapshot-postgres"
   "entity-store"
