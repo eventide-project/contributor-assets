@@ -24,6 +24,7 @@ ruby_public_gem_projects=(
   "eventide-event-store"
   "identifier-uuid"
   "initializer"
+  "invocation"
   "log"
   "message-store"
   "message-store-event-store"
