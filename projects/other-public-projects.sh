@@ -1,5 +1,9 @@
 set -e
 
+database=(
+  "postgres-message-store-database"
+)
+
 tools=(
   "contributor-assets"
   "event-store-utils"
