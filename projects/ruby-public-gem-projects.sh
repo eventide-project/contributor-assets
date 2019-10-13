@@ -35,6 +35,7 @@ ruby_public_gem_projects=(
   "messaging-postgres"
   "mimic"
   "poll"
+  "postgres-message-store"
   "reflect"
   "retry"
   "schema"
