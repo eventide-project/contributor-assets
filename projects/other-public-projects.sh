@@ -1,7 +1,7 @@
 set -e
 
 database=(
-  "postgres-message-store-database"
+  "postgres-message-store"
 )
 
 tools=(
