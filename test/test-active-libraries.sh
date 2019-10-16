@@ -27,8 +27,6 @@ pushd $PROJECTS_HOME > /dev/null
 
 for name in "${libraries[@]}"; do
   echo
-  echo
-  echo
   echo $name
   echo "= = = = = = = = = = = = = = = = = = = = = = = = = ="
 
@@ -54,7 +52,11 @@ for name in "${libraries[@]}"; do
     . ./install-gems.sh
   fi
 
-  ruby test/automated.rb
+  if [ -f test/automated.rb ]; then
+    ruby test/automated.rb
+  else
+    echo "- no tests to run"
+  fi
 
   popd > /dev/null
 
