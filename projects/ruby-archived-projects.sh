@@ -40,6 +40,7 @@ ruby_archived_projects=(
   "raygun-client"
   "runner"
   "serialize"
+  "skeleton-component"
   "stream-monitor"
   "telemetry-logger"
 )
