@@ -12,19 +12,15 @@ if [ ! -z ${INSTALL_GEMS+x} ]; then
 fi
 
 echo
-echo "Testing Eventide Utility Libraries"
+echo "Testing Active Libraries"
 echo "= = ="
 echo "(Install Gems: $install_gems}"
 echo
 
 source ./projects/ruby-public-gem-projects.sh
 
-# libraries=(
-#   "${ruby_active_projects[@]}"
-# )
-
 libraries=(
-  "schema"
+  "${ruby_active_projects[@]}"
 )
 
 pushd $PROJECTS_HOME > /dev/null
