@@ -1,6 +1,8 @@
 set -e
 
-ruby_public_gem_projects=(
+source ./projects/ruby-event-store-projects.sh
+
+ruby_active_projects=(
   "async-invocation"
   "attribute"
   "casing"
@@ -10,28 +12,22 @@ ruby_public_gem_projects=(
   "component-host"
   "configure"
   "consumer"
-  "consumer-event-store"
   "consumer-postgres"
   "dependency"
   "diagnostics-sample"
   "entity-cache"
   "entity-projection"
-  "entity-snapshot-event-store"
   "entity-snapshot-postgres"
   "entity-store"
-  "event-store-http"
   "eventide-postgres"
-  "eventide-event-store"
   "identifier-uuid"
   "initializer"
   "invocation"
   "log"
   "message-store"
-  "message-store-event-store"
   "message-store-postgres"
   "message-store-postgres-database"
   "messaging"
-  "messaging-event-store"
   "messaging-postgres"
   "mimic"
   "poll"
@@ -48,4 +44,9 @@ ruby_public_gem_projects=(
   "view-data-commands"
   "view-data-pg"
   "virtual"
+)
+
+ruby_public_gem_projects=(
+  "${ruby_active_projects[@]}"
+  "${ruby_event_store_projects[@]}"
 )
