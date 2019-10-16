@@ -1,7 +1,6 @@
 set -e
 
 ruby_archived_projects=(
-  "collection"
   "connection"
   "connection-client"
   "connection-server"
