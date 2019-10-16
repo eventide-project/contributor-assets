@@ -4,6 +4,10 @@ database=(
   "postgres-message-store"
 )
 
+npm=(
+  "postgres-message-store-npm-package"
+)
+
 tools=(
   "contributor-assets"
   "event-store-utils"
@@ -19,6 +23,8 @@ administrative=(
 )
 
 other_public_projects=(
+  "${database[@]}"
+  "${npm[@]}"
   "${administrative[@]}"
   "${tools[@]}"
   "${documentation[@]}"
