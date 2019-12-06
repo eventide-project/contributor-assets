@@ -33,6 +33,7 @@ ruby_archived_projects=(
   "http-protocol"
   "http-server"
   "http-stack-test"
+  "message-store-postgres-database"
   "metrics-stream-divergence"
   "ops-genie-client"
   "process-host"

@@ -27,7 +27,6 @@ ruby_active_projects=(
   "message-db"
   "message-store"
   "message-store-postgres"
-  "message-store-postgres-database"
   "messaging"
   "messaging-postgres"
   "mimic"
