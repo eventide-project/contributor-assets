@@ -1,9 +1,5 @@
 set -e
 
-database=(
-  "postgres-message-store"
-)
-
 npm=(
   "postgres-message-store-npm-package"
 )
@@ -23,7 +19,6 @@ administrative=(
 )
 
 other_public_projects=(
-  "${database[@]}"
   "${npm[@]}"
   "${administrative[@]}"
   "${tools[@]}"

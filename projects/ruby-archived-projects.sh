@@ -36,6 +36,7 @@ ruby_archived_projects=(
   "metrics-stream-divergence"
   "ops-genie-client"
   "process-host"
+  "postgres-message-store"
   "raygun-client"
   "runner"
   "serialize"
