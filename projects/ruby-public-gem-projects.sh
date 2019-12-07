@@ -24,7 +24,6 @@ ruby_active_projects=(
   "initializer"
   "invocation"
   "log"
-  "message-db"
   "message-store"
   "message-store-postgres"
   "messaging"
