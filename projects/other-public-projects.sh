@@ -1,9 +1,5 @@
 set -e
 
-npm=(
-  "postgres-message-store-npm-package"
-)
-
 tools=(
   "contributor-assets"
   "event-store-utils"
@@ -19,7 +15,6 @@ administrative=(
 )
 
 other_public_projects=(
-  "${npm[@]}"
   "${administrative[@]}"
   "${tools[@]}"
   "${documentation[@]}"
