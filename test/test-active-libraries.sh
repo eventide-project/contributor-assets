@@ -54,6 +54,8 @@ for name in "${libraries[@]}"; do
 
   if [ -f test/automated.rb ]; then
     ruby test/automated.rb
+  elif [ -f ./test.sh ]; then
+    ./test.sh
   else
     echo "- no tests to run"
   fi
