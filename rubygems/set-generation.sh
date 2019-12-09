@@ -28,7 +28,7 @@ function set-generation {
 
   versions=($(GEMSPEC=$gemspec ruby $set_generation_ruby_script))
 
-  if [ ! -z ${versions[*]} ]; then
+  if [[ ! -z ${versions[*]} ]]; then
     current_version=${versions[0]}
     next_version=${versions[1]}
 
