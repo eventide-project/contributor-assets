@@ -32,6 +32,7 @@ for name in *; do
   popd > /dev/null
 
   echo
+  echo
 done
 
 popd > /dev/null
