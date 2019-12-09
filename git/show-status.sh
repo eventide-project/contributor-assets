@@ -18,6 +18,12 @@ for name in *; do
   echo $name
   echo "- - -"
 
+  if [ ! -d "$name/.git" ]; then
+    echo "Not a Git working copy. Skipping."
+    echo
+    continue
+  fi
+
   dir=$name
   pushd $dir > /dev/null
 
