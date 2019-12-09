@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 
-set -eu
+${DRY_RUN:=true}
 
-DRY_RUN=${DRY_RUN:-yes}
+set -e
 
-if [ -z ${PROJECTS_HOME:-} ]; then
+exec 1>&2
+
+if [ -z ${PROJECTS_HOME+x} ]; then
   echo "PROJECTS_HOME is not set"
   exit 1
 fi
 
-if [ -z ${GENERATION:-} ]; then
+if [ -z ${GENERATION+x} ]; then
   echo "GENERATION is not set"
   exit 1
 fi
