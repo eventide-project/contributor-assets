@@ -46,7 +46,7 @@ ruby -p -i -e 'gsub(#{current_version.to_s.inspect}, #{next_version.to_s.inspect
 SH
 
 puts <<~TEXT
-#{'(Dry run) ' if dry_run}Replacing Version Identifier
+#{'(DRY RUN) ' if dry_run}Replacing Version Identifier
 - - -
 Gem Name: #{gemspec.name}
 Current Version: #{current_version}

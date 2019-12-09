@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-${DRY_RUN:=true}
-
 set -e
 
-exec 1>&2
+if [ -z ${DRY_RUN+x} ]; then
+  DRY_RUN=true
+fi
 
 if [ -z ${PROJECTS_HOME+x} ]; then
   echo "PROJECTS_HOME is not set"
@@ -59,7 +59,6 @@ __working_copies=(
 
 working_copies=(
   "async-invocation"
-  "consumer"
 )
 
 pushd $PROJECTS_HOME > /dev/null
