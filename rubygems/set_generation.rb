@@ -10,10 +10,7 @@ gemspec_path = ENV.fetch('GEMSPEC') do
   fail "ERROR: Must supply a gemspec path via ENV['GEMSPEC']"
 end
 
-puts <<~TEXT
-Loading Gemspec (#{gemspec_path})
-- - -
-TEXT
+puts "Loading gemspec (Path: #{gemspec_path})"
 
 gemspec = Gem::Specification.load(gemspec_path)
 
@@ -21,12 +18,11 @@ if gemspec.nil?
   fail "Gemspec not found at #{gemspec_path}"
 end
 
-puts <<~TEXT
-Gemspec #{gemspec_path} was loaded
-
-TEXT
-
 current_version = gemspec.version
+
+puts <<~TEXT
+Gemspec loaded (Path: #{gemspec_path}, Version: #{current_version})
+TEXT
 
 next_version_segments = current_version.segments.map.with_index do |value, level|
   if level.zero?
@@ -37,6 +33,11 @@ next_version_segments = current_version.segments.map.with_index do |value, level
 end
 
 next_version = next_version_segments * '.'
+
+if next_version == current_version.to_s
+  puts "Skipping; generation is already set to #{generation}"
+  exit true
+end
 
 dry_run = !ENV['DRY_RUN'].to_s.match?(/\A(?:off|no|n|false|f|0)\z/i)
 
@@ -51,7 +52,6 @@ Gem Name: #{gemspec.name}
 Current Version: #{current_version}
 Next Version: #{next_version}
 Command: #{command}
-
 TEXT
 
 STDOUT.puts <<~TEXT

@@ -26,10 +26,12 @@ function set-generation {
 
   versions=($(GEMSPEC=$gemspec ruby $set_generation_ruby_script))
 
-  current_version=${versions[0]}
-  next_version=${versions[1]}
+  if [ ! -z ${versions[*]} ]; then
+    current_version=${versions[0]}
+    next_version=${versions[1]}
 
-  commit-changes $current_version $next_version
+    commit-changes $current_version $next_version
+  fi
 }
 
 function commit-changes {
@@ -77,5 +79,3 @@ for name in "${working_copies[@]}"; do
 done
 
 popd > /dev/null
-
-echo "= = ="
