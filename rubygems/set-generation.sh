@@ -53,8 +53,13 @@ echo "Set Generation"
 echo "= = ="
 echo
 
+# working_copies=(
+#   "${ruby_utility_projects[@]}"
+# )
+
 working_copies=(
-  "${ruby_utility_projects[@]}"
+  "async-invocation"
+  "attribute"
 )
 
 pushd $PROJECTS_HOME > /dev/null
