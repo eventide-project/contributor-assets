@@ -35,7 +35,7 @@ end
 next_version = next_version_segments * '.'
 
 if next_version == current_version.to_s
-  puts "Skipping; generation is already set to #{generation}"
+  puts "Skipping. Generation is already set to #{generation}."
   exit true
 end
 
