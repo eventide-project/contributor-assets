@@ -49,7 +49,7 @@ function commit-changes {
 }
 
 echo
-echo "Increase Version"
+echo "Set Generation"
 echo "= = ="
 echo
 
