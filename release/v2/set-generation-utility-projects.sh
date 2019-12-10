@@ -11,12 +11,9 @@ if [ -z ${PROJECTS_HOME+x} ]; then
   exit 1
 fi
 
-if [ -z ${GENERATION+x} ]; then
-  echo "GENERATION is not set"
-  exit 1
-fi
+export GENERATION=2
 
-source ./projects/ruby-public-gem-projects.sh
+source ./projects/ruby-utility-projects.sh
 source ./utilities/run-cmd.sh
 
 script_dir=$(pwd)
@@ -49,11 +46,12 @@ function commit-changes {
 }
 
 echo
-echo "Set Generation"
+echo "Set Generation on Utility Projects"
 echo "= = ="
 echo
 
 working_copies=(
+  "${ruby_utility_projects[@]}"
 )
 
 pushd $PROJECTS_HOME > /dev/null

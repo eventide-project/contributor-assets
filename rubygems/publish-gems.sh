@@ -32,25 +32,20 @@ function publish-gem {
 
   for gemfile in *.gem; do
     echo "Publishing $gemfile"
-    push_cmd="gem push $gemfile"
+    push_cmd="gem push $gemfile || true"
     run-cmd "$push_cmd"
   done
 }
 
-source ./projects/ruby-public-gem-projects.sh
+source ./projects/ruby-active-projects.sh
 source ./utilities/run-cmd.sh
 
 # working_copies=(
-#   "${ruby_public_gem_projects[@]}"
+#   "${ruby_active_projects[@]}"
 # )
 
 working_copies=(
-  "consumer"
-  "consumer-event-store"
-  "consumer-postgres"
-  "entity-snapshot-event-store"
-  "event-store-http"
-  "messaging-event-store"
+  "${ruby_core_projects[@]}"
 )
 
 echo

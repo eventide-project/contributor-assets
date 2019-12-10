@@ -14,6 +14,4 @@ ruby_core_projects=(
   "message-store-postgres"
   "messaging"
   "messaging-postgres"
-  "view-data-commands"
-  "view-data-pg"
 )
