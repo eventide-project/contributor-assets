@@ -53,12 +53,8 @@ echo "Increase Version"
 echo "= = ="
 echo
 
-__working_copies=(
-  "${ruby_public_gem_projects[@]}"
-)
-
 working_copies=(
-  "async-invocation"
+  "${ruby_utility_projects[@]}"
 )
 
 pushd $PROJECTS_HOME > /dev/null
