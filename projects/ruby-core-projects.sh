@@ -9,7 +9,7 @@ ruby_core_projects=(
   "entity-projection"
   "entity-snapshot-postgres"
   "entity-store"
-  "eventide-on-rails"
+  "eventide-rails"
   "eventide-postgres"
   "message-store"
   "message-store-postgres"
