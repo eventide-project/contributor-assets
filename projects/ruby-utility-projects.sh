@@ -18,6 +18,7 @@ ruby_utility_projects=(
   "reflect"
   "retry"
   "schema"
+  "schema-fixtures"
   "set-attributes"
   "settings"
   "subst-attr"
