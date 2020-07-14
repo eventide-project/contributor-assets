@@ -9,6 +9,7 @@ ruby_utility_projects=(
   "configure"
   "dependency"
   "diagnostics-sample"
+  "entity-projection-fixtures"
   "identifier-uuid"
   "initializer"
   "invocation"
