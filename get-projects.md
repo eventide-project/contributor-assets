@@ -20,7 +20,7 @@ Create the directory:
 
 `mkdir eventide`
 
-And then change directories into this new directory.
+And then change directory into this new directory.
 
 `cd eventide`
 
@@ -44,9 +44,9 @@ From the "eventide" directory
 
 `git clone git@github.com:eventide-project/contributor-assets.git`
 
-## Change Directory to the Eventide Directory
+## Change Directory to the contributor-assets Directory
 
-`cd eventide`
+`cd contributor-assets`
 
 ## Run the Script
 
