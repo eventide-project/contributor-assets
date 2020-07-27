@@ -14,6 +14,7 @@ ruby_utility_projects=(
   "initializer"
   "invocation"
   "log"
+  "messaging-fixtures"
   "mimic"
   "poll"
   "reflect"
