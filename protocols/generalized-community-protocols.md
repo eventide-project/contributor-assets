@@ -13,7 +13,7 @@ Community members are expected to represent themselves in online media to the fu
 Conflict is a necessary element of negotiation of meaning. We hold conflict meaningfully, and as such it is a sacred process of the community.  Any action that harms the ability to hold meaningful conflict is strictly forbidden. Digressions into personal attacks will be scrutinized strictly for dishonorable conduct, and can lead to a community member being removed from community communication media as well as in-person gatherings.
 
 ## Predation
-Harassment, persecution, predation, duplicity, negotiating in bad faith, or any form of exploitation or harm-profiting will lead to immediate banning from the community, and removal from all of its communication media.
+Harassment, persecution, predation, duplicity, negotiating in bad faith, or any form of exploitation or harm-profiting, including the use of disparagement or digression into personal attacks in the course of technical and non-personal discourse, will lead to immediate banning from the Eventide community, and removal from all of its communication media.
 
 ## Expulsion
 In the event that a decision is made to remove a member from the community, the removal will be implemented by the community principals. When possible and practicable, the community as a whole will be notified of any expulsion of a community member.
