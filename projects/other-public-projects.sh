@@ -11,7 +11,6 @@ documentation=(
 )
 
 administrative=(
-  "project-status"
 )
 
 other_public_projects=(
