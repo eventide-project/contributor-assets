@@ -20,7 +20,7 @@ working_copies=(
   "${ruby_projects[@]}"
 )
 
-file_name="library-symlinks.sh"
+file_name="symlink-lib.sh"
 
 src_dir='contributor-assets/symlinks'
 

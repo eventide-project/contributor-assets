@@ -1,4 +1,6 @@
-set -e
+#!/usr/bin/env bash
+
+set -eo pipefail
 
 if [ -z ${LIBRARIES_HOME+x} ]; then
   echo "LIBRARIES_HOME must be set to the libraries directory path... exiting"
@@ -10,7 +12,7 @@ if [ ! -d "$LIBRARIES_HOME" ]; then
   exit 1
 fi
 
-function make_directory {
+function make-directory {
   directory=$1
 
   lib_directory="$LIBRARIES_HOME/$directory"
@@ -21,25 +23,7 @@ function make_directory {
   fi
 }
 
-function remove_lib_symlinks {
-  name=$1
-  directory=$2
-
-  dest="$LIBRARIES_HOME"
-  if [ ! -z "$directory" ]; then
-    dest="$dest/$directory"
-  fi
-  dest="$dest/$name"
-
-  for entry in $dest*; do
-    if [ -h "$entry" ]; then
-      echo "- removing symlink: $entry"
-      rm $entry
-    fi
-  done
-}
-
-function symlink_lib {
+function symlink-lib {
   name=$1
   directory=$2
 
@@ -47,15 +31,13 @@ function symlink_lib {
   echo "Symlinking $name"
   echo "- - -"
 
-  remove_lib_symlinks $name $directory
-
   src="$(pwd)/lib"
   dest="$LIBRARIES_HOME"
   if [ ! -z "$directory" ]; then
     src="$src/$directory"
     dest="$dest/$directory"
 
-    make_directory $directory
+    make-directory $directory
   fi
   src="$src/$name"
 
@@ -78,3 +60,5 @@ function symlink_lib {
   echo "($name done)"
   echo
 }
+
+symlink-lib "{library directory}"
