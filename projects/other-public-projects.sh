@@ -3,6 +3,7 @@ set -e
 tools=(
   "contributor-assets"
   "event-store-utils"
+  "pg-stats"
 )
 
 documentation=(
