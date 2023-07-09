@@ -18,6 +18,7 @@ ruby_utility_projects=(
   "mimic"
   "poll"
   "reflect"
+  "record-invocation"
   "retry"
   "schema"
   "schema-fixtures"
