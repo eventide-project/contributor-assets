@@ -75,7 +75,3 @@ for gemname in "${gems[@]}"; do
 done
 
 echo "= = ="
-
-
-
-
