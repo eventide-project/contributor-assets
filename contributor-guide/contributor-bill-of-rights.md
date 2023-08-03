@@ -1,4 +1,4 @@
-<img src="https://s3.amazonaws.com/media.eventide-project.org/eventide-icon-100.png" />
+<img src="https://github.com/eventide-project/contributor-assets/blob/master/materials/eventide-glyph-132.png?raw=true" />
 
 # Eventide Contributor Bill of Rights
 
