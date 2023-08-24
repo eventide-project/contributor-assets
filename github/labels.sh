@@ -33,6 +33,7 @@ standard_labels=(
   '{"name":"feature","description":"Capability or functionality to be implemented","color":"0e8a16"}'
   '{"name":"entry level","description":"Relatively straight-forward, provided guidance and stewardship from project principals","color":"5319e7"}'
   '{"name":"improvement","description":"Something that will be implemented to make an improvement or enhancement","color":"c2e0c6"}'
+  '{"name":"incompatible","description":"Change that is incompatible with existing clients","color":"f3f428"}'
   '{"name":"materials","description":"Documentation, presentations, work shops","color":"fffaf0"}'
   '{"name":"mistake","description":"Something is not right or does not meet standards and needs correction","color":"ff9500"}'
   '{"name":"problem","description":"Malfunction, bug, defect, aberration, irregularity, flaw, error, fault, and the like","color":"d91f0b"}'
