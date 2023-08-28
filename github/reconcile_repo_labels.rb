@@ -138,7 +138,10 @@ class Reconcile
     @uri = uri
   end
 
-  def self.call(...) = new(...).()
+  def self.call(...)
+    instance = new(...)
+    instance.()
+  end
 
   def call
     org_labels.each do |label_data|

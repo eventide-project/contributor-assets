@@ -15,18 +15,18 @@ source ./github/labels.sh
 
 org_name='eventide-project'
 
-#repos=(
-#  "${projects[@]}"
-#)
-repos=(async-invocation)
+repos=(
+  "${projects[@]}"
+)
 
 echo
 echo "Reconciling Labels for $org_name"
 echo "= = ="
 echo
 
+labels=$(IFS=$'\n'; echo "${standard_labels[*]}")
+
 for repo in "${repos[@]}"; do
-  labels=$(IFS=$'\n'; echo "${standard_labels[*]}")
   LABELS="$labels" ORG_NAME=$org_name REPO=$repo github/reconcile_repo_labels.rb
 done
 
