@@ -1,13 +1,5 @@
 #!/usr/bin/env ruby
 
-## To Do
-#
-# - Review whether the other label scripts can be removed
-#   - Remove set-org-labels.sh, set-repo-labels.sh, correct-org-labels.sh, correct-repo-labels.sh
-# - Move label settings from labels.sh to this file, or possibly github/labels.json/yaml
-#
-# Nathan - Thu, Aug 24 2023
-
 require 'json'
 require 'net/http'
 require 'erb'
