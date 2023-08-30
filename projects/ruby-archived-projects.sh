@@ -45,4 +45,5 @@ ruby_archived_projects=(
   "skeleton-component"
   "stream-monitor"
   "telemetry-logger"
+  "wait"
 )

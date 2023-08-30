@@ -29,5 +29,4 @@ ruby_utility_projects=(
   "try"
   "validate"
   "virtual"
-  "wait"
 )
