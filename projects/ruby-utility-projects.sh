@@ -12,6 +12,7 @@ ruby_utility_projects=(
   "entity-projection-fixtures"
   "identifier-uuid"
   "initializer"
+  "invocation"
   "log"
   "messaging-fixtures"
   "mimic"
