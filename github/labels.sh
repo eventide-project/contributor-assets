@@ -40,4 +40,5 @@ standard_labels=(
   '{"name":"problem","description":"Malfunction, bug, defect, aberration, irregularity, flaw, error, fault, and the like","color":"d91f0b"}'
   '{"name":"question","description":"A matter that requires clarification","color":"22f726"}'
   '{"name":"suggestion","description":"A feature or a change you would like to have considered","color":"d4c5f9"}'
+  '{"name":"refit","description":"Significant change to a library or set of interdependent libraries","color":"e99695"}'
 )
