@@ -27,6 +27,7 @@ ruby_utility_projects=(
   "settings"
   "subst-attr"
   "telemetry"
+  "template-method"
   "transform"
   "try"
   "validate"
