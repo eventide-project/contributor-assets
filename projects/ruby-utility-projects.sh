@@ -17,6 +17,7 @@ ruby_utility_projects=(
   "messaging-fixtures"
   "mimic"
   "poll"
+  "protocol"
   "reflect"
   "record-invocation"
   "retry"
