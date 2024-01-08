@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 set -u
 
 if [ -f ~/device ]; then
