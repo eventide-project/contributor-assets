@@ -46,4 +46,5 @@ ruby_archived_projects=(
   "stream-monitor"
   "telemetry-logger"
   "wait"
+  "virtual"
 )

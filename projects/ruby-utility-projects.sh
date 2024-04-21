@@ -31,5 +31,4 @@ ruby_utility_projects=(
   "transform"
   "try"
   "validate"
-  "virtual"
 )
