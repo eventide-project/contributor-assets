@@ -45,7 +45,7 @@ function pull-repo {
     run-cmd "$checkout_cmd"
   fi
 
-  pull_cmd="git pull --rebase $remote_name master"
+  pull_cmd="git pull --rebase --autostash $remote_name master"
   run-cmd "$pull_cmd"
 
   if [ master != "$current_branch" ]; then
