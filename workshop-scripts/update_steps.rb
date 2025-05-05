@@ -36,7 +36,7 @@ class Parse
 
     project = commit_match_data[:project]
 
-    unless reference == 'master'
+    unless reference == "master"
       message_match_data = message_pattern.match(text)
 
       message = message_match_data[:message]
@@ -75,7 +75,7 @@ class Parse
     def next_ref
       puts "Getting next ref (Project: #{project}, Commit Message: #{commit_message.inspect}, Current Ref: #{current_ref})"
 
-      if current_ref == 'master'
+      if current_ref == "master"
         next_ref = current_ref
       else
         pattern = Regexp.escape(commit_message)
@@ -126,7 +126,7 @@ Updating git commit SHAs for step scripts
 
 TEXT
 
-step_scripts = Dir['step/*'].grep(%r{/[[:digit:]]+\z}).sort do |a, b|
+step_scripts = Dir["step/*"].grep(%r{/[[:digit:]]+\z}).sort do |a, b|
   File.basename(a).to_i <=> File.basename(b).to_i
 end
 
