@@ -28,6 +28,7 @@ gems=(
   "messaging-event_store"
   "mimic"
   "poll"
+  "record_invocation"
   "schema"
   "set_attributes"
   "settings"
