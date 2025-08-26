@@ -32,7 +32,7 @@ Use this label to indicate a definite malfunction.
 
 ### mistake
 
-This label is used to characterize something that was done in the past that should have been done differently, does not meet standards, and needs to be correction.
+This label is used to characterize something that was done in the past that should have been done differently, does not meet standards, and needs to be corrected.
 
 This label should not be used to indicate defects.
 
