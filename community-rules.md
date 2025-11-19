@@ -17,11 +17,11 @@ Community members are expected to represent themselves in Eventide online media 
 
 ## Conflict is Sacred: Our Code of Conflict
 
-Conflict is a necessary element of negotiation of meaning. We hold conflict meaningfully, and as such it is a sacred process of the Eventide community.  Any action that harms the ability to hold meaningful conflict is strictly forbidden. Digressions into personal attacks will be scrutinized strictly for dishonorable conduct and can lead to a community member being expelled from the Eventide community.
+Conflict is a necessary element of negotiation of meaning. We hold conflict meaningfully, and as such it is a sacred process of the Eventide community.  Any action that harms the ability to hold meaningful conflict is strictly forbidden. Digressions into personal attacks in the course of discourse will be scrutinized strictly for dishonorable conduct and can lead to a community member being expelled from the Eventide community.
 
 ## Predation
 
-Harassment, persecution, predation, duplicity, negotiating in bad faith, the use of disparagement or digression into personal attacks in the course of technical and non-personal discourse, unethical business or personal conduct either inside of or outside of Eventide community spaces, or any form of exploitation or harm-profiting, will lead to removal from the Eventide community.
+Harassment, persecution, predation, duplicity, negotiating in bad faith, unethical business or personal conduct either inside of or outside of Eventide community spaces, or any form of exploitation or harm-profiting, will lead to removal from the Eventide community.
 
 ## Expulsion
 
