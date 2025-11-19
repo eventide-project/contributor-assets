@@ -29,7 +29,7 @@ In the event that a decision is made to remove a member from the Eventide commun
 
 ## Judgments
 
-Judgments will be made by Eventide community leaders, and will be made as open and transparent as possible, and as practicable per the circumstances and conditions of any matter of Eventide community standards and protocols.
+Judgments will be made by Eventide community leaders, and will be made as open and transparent as possible and as practicable per the circumstances and conditions of any matter of Eventide community standards and protocols.
 
 - - -
 
