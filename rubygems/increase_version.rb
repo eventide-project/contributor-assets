@@ -1,14 +1,14 @@
-require 'rubygems'
+require "rubygems"
 
 $stdout = $stderr
 
-gemspec_path = ENV.fetch('GEMSPEC') do
-  fail "ERROR: Must supply a gemspec path via ENV['GEMSPEC']"
+gemspec_path = ENV.fetch("GEMSPEC") do
+  fail "ERROR: Must supply a gemspec path via ENV["GEMSPEC"]"
 end
 
-version_level = ENV.fetch('LEVEL') do
+version_level = ENV.fetch("LEVEL") do
   $stderr.puts <<~ERROR_MESSAGE
-  Must supply a version level via ENV['LEVEL']. Value must be one of these:
+  Must supply a version level via ENV["LEVEL"]. Value must be one of these:
 
           patch      0.0.0.1 -> 0.0.0.2
           minor      0.0.1.2 -> 0.0.2.0
@@ -39,12 +39,12 @@ TEXT
 current_version = gemspec.version
 
 level_ordinal = {
-  'patch' => 3,
-  'minor' => 2,
-  'major' => 1,
-  'generation' => 0
-}.fetch(ENV['LEVEL']) do
-  fail "Invalid level name #{ENV['LEVEL'].inspect}"
+  "patch" => 3,
+  "minor" => 2,
+  "major" => 1,
+  "generation" => 0
+}.fetch(ENV["LEVEL"]) do
+  fail "Invalid level name #{ENV["LEVEL"].inspect}"
 end
 
 next_version_segments = current_version.segments.map.with_index do |value, level|
@@ -53,20 +53,20 @@ next_version_segments = current_version.segments.map.with_index do |value, level
   elsif level == level_ordinal
     value.to_i.next.to_s
   else
-    '0'
+    "0"
   end
 end
 
-next_version = next_version_segments * '.'
+next_version = next_version_segments * "."
 
-dry_run = !ENV['DRY_RUN'].to_s.match?(/\A(?:off|no|n|false|f|0)\z/i)
+dry_run = !ENV["DRY_RUN"].to_s.match?(/\A(?:off|no|n|false|f|0)\z/i)
 
 command = <<~SH.chomp
 ruby -p -i -e 'gsub(#{current_version.to_s.inspect}, #{next_version.to_s.inspect})' #{gemspec_path}
 SH
 
 puts <<~TEXT
-#{'(Dry run) ' if dry_run}Replacing Version Identifier
+#{"(Dry run) " if dry_run}Replacing Version Identifier
 - - -
 Gem Name: #{gemspec.name}
 Current Version: #{current_version}
