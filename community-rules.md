@@ -2,7 +2,7 @@
 
 # Eventide Community Rules
 
-The Eventide community is the most valuable knowledge resource supporting the Eventide project. It’s more instrumental than any of the documentation, training materials, or samples apps that help people understand and work with the tools, the architecture, and the mindset.
+The Eventide community is the most valuable knowledge resource supporting the Eventide project. It’s more instrumental than any of the documentation, training materials, or sample apps that help people understand and work with the tools, the architecture, and the mindset.
 
 Protecting the integrity of the negotiation of meaning and the valuable relationships that make up the Eventide community is a key responsibility of the Eventide community leadership.
 
