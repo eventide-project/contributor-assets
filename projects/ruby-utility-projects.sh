@@ -10,6 +10,7 @@ ruby_utility_projects=(
   "dependency"
   "diagnostics-sample"
   "entity-projection-fixtures"
+  "env-var"
   "identifier-uuid"
   "initializer"
   "invocation"
