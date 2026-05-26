@@ -8,6 +8,7 @@ tools=(
 
 documentation=(
   "docs"
+  "docs-redirect"
   "useful-objects"
 )
 
