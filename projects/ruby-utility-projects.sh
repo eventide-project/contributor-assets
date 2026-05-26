@@ -7,7 +7,6 @@ ruby_utility_projects=(
   "clock"
   "collection"
   "configure"
-  "constant"
   "dependency"
   "diagnostics-sample"
   "entity-projection-fixtures"
