@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'json'
-require 'net/http'
+require "json"
+require "net/http"
 
 module Defaults
   extend self
@@ -11,11 +11,11 @@ module Defaults
   end
 
   def dry_run
-    ENV.fetch('DRY_RUN', 'off')
+    ENV.fetch("DRY_RUN", "off")
   end
 
   def dry_run?
-    dry_run == 'on'
+    dry_run == "on"
   end
 
   def org_milestones
@@ -23,7 +23,7 @@ module Defaults
   end
 
   def get_org_milestones
-    milestones_text = ENV.fetch('MILESTONES') do
+    milestones_text = ENV.fetch("MILESTONES") do
       abort "MILESTONES isn't set"
     end
 
@@ -33,17 +33,17 @@ module Defaults
   end
 
   def repo
-    ENV.fetch('REPO') do
+    ENV.fetch("REPO") do
       abort "Usage: #{$PROGRAM_NAME} repo"
     end
   end
 
   def org_name
-    ENV.fetch('ORG_NAME', 'eventide-project')
+    ENV.fetch('ORG_NAME", "eventide-project")
   end
 
   def github_token
-    ENV.fetch('GITHUB_TOKEN') do
+    ENV.fetch("GITHUB_TOKEN') do
       abort "GITHUB_TOKEN isn't set"
     end
   end
@@ -226,8 +226,8 @@ class Reconcile
   end
 
   def http_request(request, &response_action)
-    request.basic_auth(github_token, 'x-oauth-basic')
-    request['Accept'] = 'application/vnd.github.v3+json'
+    request.basic_auth(github_token, "x-oauth-basic")
+    request["Accept"] = "application/vnd.github.v3+json"
 
     puts "#{request.method} #{request.uri}"
 
@@ -284,7 +284,7 @@ Reconcile Milestones for #{repo}
 
 TEXT
 
-use_ssl = uri.scheme == 'https'
+use_ssl = uri.scheme == "https"
 Net::HTTP.start(uri.hostname, use_ssl:) do |http|
   Reconcile.(http, uri)
 end

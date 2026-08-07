@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
-require 'json'
-require 'net/http'
-require 'erb'
+require "json"
+require "net/http"
+require "erb"
 
 module Defaults
   extend self
@@ -12,37 +12,37 @@ module Defaults
   end
 
   def dry_run
-    ENV.fetch('DRY_RUN', 'off')
+    ENV.fetch("DRY_RUN", "off")
   end
 
   def dry_run?
-    dry_run == 'on'
+    dry_run == "on"
   end
 
   def original_milestone_name
-    ENV.fetch('ORIGINAL_MILESTONE') do
-      'v3'
+    ENV.fetch("ORIGINAL_MILESTONE") do
+      "v3"
     end
   end
 
   def milestone_name
-    ENV.fetch('MILESTONE') do
-      'Gen 3'
+    ENV.fetch("MILESTONE") do
+      "Gen 3"
     end
   end
 
   def repo
-    ENV.fetch('REPO') do
+    ENV.fetch("REPO") do
       abort "Usage: #{$PROGRAM_NAME} repo"
     end
   end
 
   def org_name
-    ENV.fetch('ORG_NAME', 'eventide-project')
+    ENV.fetch("ORG_NAME", "eventide-project")
   end
 
   def github_token
-    ENV.fetch('GITHUB_TOKEN') do
+    ENV.fetch("GITHUB_TOKEN") do
       abort "GITHUB_TOKEN isn't set"
     end
   end
@@ -92,7 +92,7 @@ class Reconcile
       data = { title: milestone_name }
     else
       request = Net::HTTP::Post.new(milestones_uri)
-      data = { title: milestone_name, state: 'open' }
+      data = { title: milestone_name, state: 'open" }
     end
 
     json = JSON.generate(data)
@@ -102,8 +102,8 @@ class Reconcile
   end
 
   def http_request(request, &response_action)
-    request.basic_auth(github_token, 'x-oauth-basic')
-    request['Accept'] = 'application/vnd.github.v3+json'
+    request.basic_auth(github_token, "x-oauth-basic")
+    request["Accept"] = "application/vnd.github.v3+json'
 
     puts "#{request.method} #{request.uri}"
 
@@ -156,7 +156,7 @@ Rename Milestone #{original_milestone_name.inspect} -> #{milestone_name.inspect}
 
 TEXT
 
-use_ssl = uri.scheme == 'https'
+use_ssl = uri.scheme == "https"
 Net::HTTP.start(uri.hostname, use_ssl:) do |http|
   Reconcile.(http, uri)
 end
